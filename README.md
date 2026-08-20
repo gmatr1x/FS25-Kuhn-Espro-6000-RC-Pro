@@ -72,21 +72,19 @@ The working speed is fixed at **25 km/h** in the current release.
 
 ## 🔄 Automatic Refill System
 
-The mod includes a custom chained refill system.
+The mod includes a custom chained refill system designed to make filling seed and fertiliser much quicker and easier.
 
-Instead of pressing **R** after every seed or fertiliser bag/pallet:
+Instead of manually restarting the refill process after every bag or pallet:
 
-1. Position compatible bags or pallets near the ESPRO.
-2. Press **R** on the first source.
-3. The ESPRO begins filling normally.
-4. When that source is empty, Auto Refill searches for another compatible nearby source.
-5. Filling continues automatically until the tank is full or no compatible source remains.
+1. Position compatible seed or fertiliser bags/pallets near the ESPRO.
+2. Start filling normally with **R**.
+3. The ESPRO begins filling from the current source.
+4. When that source is empty, the system searches for another compatible nearby source.
+5. Refilling continues automatically until the relevant tank is full or no compatible nearby source remains.
 
-### Auto Refill Control
+There is **no additional Auto Refill toggle or custom keybind required**.
 
-**Left Alt + R** — Toggle Auto Refill ON/OFF
-
-Turning Auto Refill off does not interrupt the pallet currently being used. It prevents the automatic hand-off to the next source.
+Simply begin filling normally and the chained refill system handles compatible nearby sources automatically.
 
 ---
 
@@ -102,6 +100,8 @@ This makes it much easier to position multiple:
 * Fertiliser pallets
 
 around the machine without having to place every source directly against the hopper.
+
+Combined with the chained refill system, multiple nearby bags or pallets can be used with much less repositioning.
 
 ---
 
@@ -127,8 +127,9 @@ The frame and hopper can be configured independently where supported.
 
 Several Special Edition configurations are included for players who want a more distinctive machine.
 
-Examples include:
+Available editions include:
 
+* Factory
 * Black Edition
 * Stealth Edition
 * Gold Edition
@@ -302,7 +303,7 @@ Existing purchased machines may need to be sold and repurchased if a future upda
 
 ### v1.3.2.0
 
-* Faster Auto Refill source hand-off
+* Faster automatic refill source hand-off
 * Improved nearby-source detection
 * Increased source detection grace period
 * Improved full-tank handling
@@ -331,7 +332,9 @@ FS25_KuhnEspro6000RC_Pro.zip
 
 ## 🛠️ Development
 
-The project includes custom Lua functionality for the automatic refill system.
+The project includes custom Lua functionality for the automatic chained refill system.
+
+The refill system is designed to continue automatically between compatible nearby seed or fertiliser sources after the player begins filling normally.
 
 The Lua source contains the project credit:
 
@@ -394,7 +397,7 @@ Documents\My Games\FarmingSimulator2025\log.txt
 
 **GOLDMATR1X**
 
-Configuration changes, gameplay upgrades, Auto Refill functionality, capacity options, visual customization, lighting improvements, sound tuning, wheel/rim configurations and release preparation.
+Configuration changes, gameplay upgrades, automatic chained refill functionality, capacity options, visual customization, lighting improvements, sound tuning, wheel/rim configurations and release preparation.
 
 ### Original Vehicle / Base Assets
 
