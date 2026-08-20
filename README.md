@@ -40,7 +40,6 @@ The goal of the project is to create a more capable ESPRO without turning it int
 * Selectable rim finishes
 * Pro work lighting
 * Improved operating sounds
-* Standard FS25 fill-level display
 * Multiplayer support
 
 ---
@@ -131,9 +130,10 @@ Several Special Edition configurations are included for players who want a more 
 Examples include:
 
 * Black Edition
-* Stealth-style configurations
+* Stealth Edition
 * Gold Edition
-* Premium metallic combinations
+* Chrome Edition
+* Redline Edition
 
 ---
 
@@ -184,16 +184,6 @@ Improved sounds include:
 * Working rattle
 
 Original hydraulic, folding and hopper-cover sounds are retained.
-
----
-
-## 🖥️ HUD
-
-The mod deliberately does **not** add a custom HUD.
-
-Seed and fertiliser levels continue to use the normal Farming Simulator 25 display in the bottom-right corner.
-
-This keeps the interface clean and consistent with the base game.
 
 ---
 
@@ -325,12 +315,6 @@ Existing purchased machines may need to be sold and repurchased if a future upda
 * Enhanced blower sounds
 * Enhanced implement sounds
 
-### v1.3.0.2
-
-* Removed custom Auto Refill HUD
-* Retained Auto Refill ON/OFF control
-* Returned to the standard FS25 fill-level display
-
 ---
 
 ## 🌐 Multiplayer
@@ -450,4 +434,3 @@ If you enjoy the **KUHN ESPRO 6000 RC Pro**, consider:
 ### More capacity. Smarter refilling. Better customization.
 
 **Created by GOLDMATR1X**
-
