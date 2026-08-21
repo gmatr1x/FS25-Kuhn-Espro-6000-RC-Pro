@@ -1,0 +1,67 @@
+KUHN ESPRO 6000 RC Pro - v1.3.3.3
+Created by GOLDMATR1X
+
+- Restored the fixed 25 km/h working speed.
+- Removed all tractor-power speed-limit modifiers that could reduce working speed below 25 km/h.
+- Kept Auto Refill, large refill radius, Pro lighting, improved sounds, colours, capacities and wheel/rim configurations unchanged.
+
+KUHN ESPRO 6000 RC Pro - v1.3.3.1
+Created by GOLDMATR1X
+
+- Fixed the blank/incomplete mod preview in the Installed Mods screen.
+- Rebuilt icon.dds as 512x512 BC1/DXT1 with no mipmaps for FS25.
+- No gameplay changes from stable v1.3.3.0.
+
+KUHN ESPRO 6000 RC Pro - v1.3.3.0
+Created by GOLDMATR1X
+
+- Added three selectable Trelleborg wheel layouts:
+  * Factory Twin Pack
+  * Single Pack
+  * Full Twin Pack
+- Added selectable rim finishes:
+  * Factory
+  * Chrome
+  * White
+  * Black
+- Preserved the v1.3.2.2 large refill radius and all existing features.
+- No Pro decal package added.
+
+v1.3.2.1
+- REAL refill-radius fix
+- Enlarged the actual invisible FILLABLE collision geometry for both seed and fertiliser refill points
+- Horizontal collision scale now provides roughly 1.5 m pickup reach around each hopper fill point
+- Pallets/bags should now trigger from noticeably farther away, not just show effects farther away
+- Kept v1.3.2.0 faster 80 ms hand-off and 8-second source grace window
+- Created by GOLDMATR1X
+
+v1.3.2.0
+- Refill Convenience update
+- Increased exact-fill extra effect distance from 0.6 m to 1.5 m (visual/effect reach only)
+- Reduced automatic hand-off delay from 150 ms to 80 ms
+- Increased nearby-source grace window from 5 seconds to 8 seconds
+- Auto Refill session now stops immediately when both tanks are full
+- Kept Pro Lighting and Improved Sounds from v1.3.1.0
+- No custom HUD
+- Created by GOLDMATR1X
+
+v1.3.1.0
+- Added Pro Lighting package
+- Increased rear work-light range and coverage
+- Added dedicated left/right hopper-area illumination for night refilling
+- Brighter work-light glow while keeping normal road/brake/indicator lighting intact
+- Improved operating sound mix: stronger sowing mechanism, air blower and implement rattle
+- Kept all Auto Refill functionality from v1.3.0.2 unchanged
+- No custom HUD added
+- Created by GOLDMATR1X
+
+v1.3.0.2
+- Removed the custom Auto Refill HUD/panel completely
+- Kept automatic chained bag/pallet refill
+- Kept Left Alt + R Auto Refill ON/OFF control
+- Uses FS25's normal bottom-right fill-level display only
+- Created by GOLDMATR1X
+
+v1.3.3.2
+- Mod icon path changed to a unique FS25-compliant 512x512 BC1 DDS filename to force a fresh icon resource load.
+- No gameplay changes.

@@ -1,0 +1,1152 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="esproFertilizingSowingMachine" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>
+            <en>ESPRO 6000 RC Pro</en>
+        </name>
+        <specs>
+            <neededPower>270</neededPower>
+            <workingWidth>6.0</workingWidth>
+            <combination filterCategory="weights" filterSpec="weight" filterSpecMin="500" filterSpecMax="600" />
+        </specs>
+        <functions>
+            <function>$l10n_function_sowingMachine</function>
+            <function>$l10n_function_sowingMachineDirect</function>
+        </functions>
+        <image>$data/vehicles/kuhn/espro6000RC/store_espro6000RC.dds</image>
+        <price>129500</price>
+        <lifetime>750</lifetime>
+        <rotation>0</rotation>
+        <brand>KUHN</brand>
+        <category>seeders</category>
+        <shopTranslationOffset>0 0.052 0</shopTranslationOffset>
+        <shopRotationOffset>-0.279 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>3957504</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1363712</indexBufferMemoryUsage>
+        <textureMemoryUsage>1703936</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_sowingMachine</typeDesc>
+        <filename>espro6000RC.i3d</filename>
+        <size width="3.05" length="9.6" height="3.3" lengthOffset="-0.3" />
+        <speedLimit value="25" />
+        <components maxMass="12500">
+            <component centerOfMass="0 0.5 -1.6" solverIterationCount="10" mass="7655" />
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="1000" />
+            <joint component1="1" component2="2" node="drawbarJoint" rotLimit="0 0 0" transLimit="0 0 0" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <sounds volumeFactor="1.65" />
+        <mapHotspot type="TOOL_TRAILED" />
+    </base>
+    <wheels>
+        <wheelConfigurations title="$l10n_espro_wheelSetup">
+            <wheelConfiguration name="$l10n_espro_wheelFactory" price="0" brand="TRELLEBORG" saveId="TRELLEBORG_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="false" hasParticles="true">
+                        <physics restLoad="0.3" repr="wheel01" driveNode="wheel01DriveNode" initialCompression="30" suspTravel="0.1" spring="10" damper="20" frictionScale="2" brakeFactor="0" supportsWheelSink="false" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhnDual" isLeft="true" hasParticles="true">
+                        <physics restLoad="3.8" repr="wheel06" initialCompression="40" suspTravel="0.1" spring="90" damper="55" frictionScale="2" supportsWheelSink="false" />
+                        <additionalWheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="dual" isLeft="true" offset="0.085" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhnDual" isLeft="false" hasParticles="true">
+                        <physics restLoad="3.8" repr="wheel11" initialCompression="40" suspTravel="0.1" spring="90" damper="55" frictionScale="2" supportsWheelSink="false" />
+                        <additionalWheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="dual" isLeft="false" offset="0.085" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="true" hasParticles="true">
+                        <physics restLoad="0.3" repr="wheel16" driveNode="wheel16DriveNode" initialCompression="30" suspTravel="0.1" spring="10" damper="20" frictionScale="2" brakeFactor="0" supportsWheelSink="false" />
+                    </wheel>
+                    <wheel><physics restLoad="0.6" repr="supportWheelsLeftPhy" radius="0.38" width="1.35" mass="0.06" useReprDirection="true" initialCompression="30" suspTravel="0.1" spring="20" damper="20" frictionScale="2" yOffset="-0.005" rotationDamping="0.0055" brakeFactor="0" supportsWheelSink="false" /></wheel>
+                    <wheel><physics restLoad="0.6" repr="supportWheelsRightPhy" radius="0.38" width="1.35" mass="0.06" useReprDirection="true" initialCompression="30" suspTravel="0.1" spring="20" damper="20" frictionScale="2" yOffset="-0.005" rotationDamping="0.0055" brakeFactor="0" supportsWheelSink="false" /></wheel>
+                    <wheel><physics restLoad="0.6" repr="supportWheelsCenterPhy" radius="0.38" width="1.35" mass="0.06" useReprDirection="true" initialCompression="30" suspTravel="0.1" spring="20" damper="20" frictionScale="2" yOffset="-0.005" rotationDamping="0.0055" brakeFactor="0" supportsWheelSink="false" /></wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_espro_wheelSingle" price="500" brand="TRELLEBORG" saveId="TRELLEBORG_SINGLE">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="false" hasParticles="true">
+                        <physics restLoad="0.3" repr="wheel01" driveNode="wheel01DriveNode" initialCompression="30" suspTravel="0.1" spring="10" damper="20" frictionScale="2" brakeFactor="0" supportsWheelSink="false" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="true" hasParticles="true">
+                        <physics restLoad="3.8" repr="wheel06" initialCompression="40" suspTravel="0.1" spring="90" damper="55" frictionScale="2" supportsWheelSink="false" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="false" hasParticles="true">
+                        <physics restLoad="3.8" repr="wheel11" initialCompression="40" suspTravel="0.1" spring="90" damper="55" frictionScale="2" supportsWheelSink="false" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="true" hasParticles="true">
+                        <physics restLoad="0.3" repr="wheel16" driveNode="wheel16DriveNode" initialCompression="30" suspTravel="0.1" spring="10" damper="20" frictionScale="2" brakeFactor="0" supportsWheelSink="false" />
+                    </wheel>
+                    <wheel><physics restLoad="0.6" repr="supportWheelsLeftPhy" radius="0.38" width="1.35" mass="0.06" useReprDirection="true" initialCompression="30" suspTravel="0.1" spring="20" damper="20" frictionScale="2" yOffset="-0.005" rotationDamping="0.0055" brakeFactor="0" supportsWheelSink="false" /></wheel>
+                    <wheel><physics restLoad="0.6" repr="supportWheelsRightPhy" radius="0.38" width="1.35" mass="0.06" useReprDirection="true" initialCompression="30" suspTravel="0.1" spring="20" damper="20" frictionScale="2" yOffset="-0.005" rotationDamping="0.0055" brakeFactor="0" supportsWheelSink="false" /></wheel>
+                    <wheel><physics restLoad="0.6" repr="supportWheelsCenterPhy" radius="0.38" width="1.35" mass="0.06" useReprDirection="true" initialCompression="30" suspTravel="0.1" spring="20" damper="20" frictionScale="2" yOffset="-0.005" rotationDamping="0.0055" brakeFactor="0" supportsWheelSink="false" /></wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_espro_wheelFullTwin" price="1200" brand="TRELLEBORG" saveId="TRELLEBORG_FULL_TWIN">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhnDual" isLeft="false" hasParticles="true">
+                        <physics restLoad="0.3" repr="wheel01" driveNode="wheel01DriveNode" initialCompression="30" suspTravel="0.1" spring="10" damper="20" frictionScale="2" brakeFactor="0" supportsWheelSink="false" />
+                        <additionalWheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="dual" isLeft="false" offset="0.085" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhnDual" isLeft="true" hasParticles="true">
+                        <physics restLoad="3.8" repr="wheel06" initialCompression="40" suspTravel="0.1" spring="90" damper="55" frictionScale="2" supportsWheelSink="false" />
+                        <additionalWheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="dual" isLeft="true" offset="0.085" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhnDual" isLeft="false" hasParticles="true">
+                        <physics restLoad="3.8" repr="wheel11" initialCompression="40" suspTravel="0.1" spring="90" damper="55" frictionScale="2" supportsWheelSink="false" />
+                        <additionalWheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="dual" isLeft="false" offset="0.085" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhnDual" isLeft="true" hasParticles="true">
+                        <physics restLoad="0.3" repr="wheel16" driveNode="wheel16DriveNode" initialCompression="30" suspTravel="0.1" spring="10" damper="20" frictionScale="2" brakeFactor="0" supportsWheelSink="false" />
+                        <additionalWheel filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="dual" isLeft="true" offset="0.085" />
+                    </wheel>
+                    <wheel><physics restLoad="0.6" repr="supportWheelsLeftPhy" radius="0.38" width="1.35" mass="0.06" useReprDirection="true" initialCompression="30" suspTravel="0.1" spring="20" damper="20" frictionScale="2" yOffset="-0.005" rotationDamping="0.0055" brakeFactor="0" supportsWheelSink="false" /></wheel>
+                    <wheel><physics restLoad="0.6" repr="supportWheelsRightPhy" radius="0.38" width="1.35" mass="0.06" useReprDirection="true" initialCompression="30" suspTravel="0.1" spring="20" damper="20" frictionScale="2" yOffset="-0.005" rotationDamping="0.0055" brakeFactor="0" supportsWheelSink="false" /></wheel>
+                    <wheel><physics restLoad="0.6" repr="supportWheelsCenterPhy" radius="0.38" width="1.35" mass="0.06" useReprDirection="true" initialCompression="30" suspTravel="0.1" spring="20" damper="20" frictionScale="2" yOffset="-0.005" rotationDamping="0.0055" brakeFactor="0" supportsWheelSink="false" /></wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <dynamicallyLoadedWheels>
+            <dynamicallyLoadedWheel linkNode="wheel02" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="wheel03" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="wheel04" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="wheel05" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="wheel07" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhnDual" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="wheel08" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="wheel09" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="wheel10" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhnDual" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="wheel12" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="wheel13" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="wheel14" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="wheel15" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="kuhn" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="wheel17" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="dual" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="wheel18" filename="$data/shared/wheels/tires/trelleborg/TM600/210_95R18.xml" configId="dual" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="supportWheel01" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="supportWheel02" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="supportWheel03" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="supportWheel04" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="supportWheel05" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="supportWheel06" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="supportWheel07" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="supportWheel08" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="supportWheel09" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="supportWheel10" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="supportWheel11" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="supportWheel12" filename="$data/shared/wheels/tires/trelleborg/IM110/10_0__80__12.xml" isLeft="false" />
+        </dynamicallyLoadedWheels>
+        <rimColorConfigurations useDefaultColors="false" title="$l10n_espro_rimColor" price="250">
+            <rimColorConfiguration name="$l10n_espro_rimFactory" materialTemplateName="RIM_DEFAULT" isDefault="true" />
+            <rimColorConfiguration name="$l10n_espro_rimChrome" materialTemplateName="RIM_CONFIGURATION_CHROME" />
+            <rimColorConfiguration name="$l10n_espro_rimWhite" materialTemplateName="RIM_CONFIGURATION_WHITE" />
+            <rimColorConfiguration name="$l10n_espro_rimBlack" materialTemplateName="RIM_CONFIGURATION_BLACK" />
+        </rimColorConfigurations>
+        <hubMaterial materialTemplateName="KUHN_RED1" />
+        <hubs>
+            <hub linkNode="wheel01" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.2 0.2" />
+            <hub linkNode="wheel02" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.13 0.2 0.2" />
+            <hub linkNode="wheel03" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.2 0.2" />
+            <hub linkNode="wheel04" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.13 0.2 0.2" />
+            <hub linkNode="wheel05" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.2 0.2" />
+            <hub linkNode="wheel06" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.13 0.2 0.2" offset="0.15" />
+            <hub linkNode="wheel07" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.2 0.2" offset="0.15" />
+            <hub linkNode="wheel08" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.13 0.2 0.2" />
+            <hub linkNode="wheel09" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.2 0.2" />
+            <hub linkNode="wheel10" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.13 0.2 0.2" offset="0.15" />
+            <hub linkNode="wheel11" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.2 0.2" offset="0.15" />
+            <hub linkNode="wheel12" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.13 0.2 0.2" />
+            <hub linkNode="wheel13" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.2 0.2" />
+            <hub linkNode="wheel14" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.13 0.2 0.2" />
+            <hub linkNode="wheel15" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.2 0.2" />
+            <hub linkNode="wheel16" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.13 0.2 0.2" />
+            <hub linkNode="supportWheel01" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.13 0.16 0.16" />
+            <hub linkNode="supportWheel04" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.16 0.16" />
+            <hub linkNode="supportWheel05" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.13 0.16 0.16" />
+            <hub linkNode="supportWheel08" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.16 0.16" />
+            <hub linkNode="supportWheel09" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.13 0.16 0.16" />
+            <hub linkNode="supportWheel12" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.16 0.16" />
+        </hubs>
+    </wheels>
+    <speedRotatingParts>
+        <speedRotatingPart node="wheel02" wheelIndex="1" />
+        <speedRotatingPart node="wheel03" wheelIndex="1" />
+        <speedRotatingPart node="wheel04" wheelIndex="1" />
+        <speedRotatingPart node="wheel05" wheelIndex="1" />
+        <speedRotatingPart node="wheel07" wheelIndex="2" />
+        <speedRotatingPart node="wheel08" wheelIndex="1" />
+        <speedRotatingPart node="wheel09" wheelIndex="1" />
+        <speedRotatingPart node="wheel10" wheelIndex="3" />
+        <speedRotatingPart node="wheel12" wheelIndex="4" />
+        <speedRotatingPart node="wheel13" wheelIndex="4" />
+        <speedRotatingPart node="wheel14" wheelIndex="4" />
+        <speedRotatingPart node="wheel15" wheelIndex="4" />
+        <speedRotatingPart node="wheel17" wheelIndex="2" />
+        <speedRotatingPart node="wheel18" wheelIndex="3" />
+        <speedRotatingPart shaderNode="armLeftRow01DiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart shaderNode="armLeftRow02DiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart shaderNode="armLeftRow03DiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart shaderNode="armRightRow01DiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart shaderNode="armRightRow02DiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart shaderNode="armRightRow03DiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart shaderNode="armCenterRow01DiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart shaderNode="armCenterRow02DiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart shaderNode="armCenterRow03DiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart shaderNode="armLeftBackDiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart shaderNode="armRightBackDiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart shaderNode="armCenterBackDiscsArray" radius="-0.25" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" />
+        <speedRotatingPart node="ridgeMarkerLeftDisc" radius="0.30" ridgeMarkerAnim="ridgeMarkerLeft" onlyActiveWhenLowered="true" groundReferenceNodeIndex="2" />
+        <speedRotatingPart node="ridgeMarkerRightDisc" radius="0.30" ridgeMarkerAnim="ridgeMarkerRight" onlyActiveWhenLowered="true" groundReferenceNodeIndex="3" />
+    </speedRotatingParts>
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" rootNode="espro6000RC_drawbar_component2" jointType="implement" lowerRotLimitScale="0 0 1" upperRotLimitScale="0 0 1" lowerTransLimitScale="0 1 0" allowsLowering="true" useFoldingLoweredState="true">
+                <distanceToGround lower="0.7" upper="0.7" />
+                <bottomArm widths="0.91" ballType="2" />
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <support animationName="support" />
+        <support animationName="lockDrawbarLimit" delayedOnAttach="false" detachAfterAnimation="false" />
+        <lowerAnimation name="lowering" speed="1" />
+        <brakeForce force="1.5" maxForce="2.3" maxForceMass="12300" />
+        <sounds>
+            <active file="$data/sounds/tools/cultivator/generalRattle_01.wav" innerRadius="10" outerRadius="50" volumeScale="3.8" isLocalSound="true" pitchScale="0.98">
+                <volume indoor="0.75" outdoor="1.0">
+                    <modifier type="WHEEL_SUSPENSION" value="-0.07" modifiedValue="0.25" />
+                    <modifier type="WHEEL_SUSPENSION" value="-0.04" modifiedValue="0.12" />
+                    <modifier type="WHEEL_SUSPENSION" value="-0.02" modifiedValue="0.05" />
+                    <modifier type="WHEEL_SUSPENSION" value="-0.01" modifiedValue="0.00" />
+                    <modifier type="WHEEL_SUSPENSION" value="-0.00" modifiedValue="0.0" />
+                    <modifier type="WHEEL_SUSPENSION" value="0.01" modifiedValue="0.00" />
+                    <modifier type="WHEEL_SUSPENSION" value="0.02" modifiedValue="0.05" />
+                    <modifier type="WHEEL_SUSPENSION" value="0.04" modifiedValue="0.12" />
+                    <modifier type="WHEEL_SUSPENSION" value="0.07" modifiedValue="0.25" />
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="2.0" modifiedValue="1.0" />
+                    <modifier type="SPEED" value="40.0" modifiedValue="1.0" />
+                </volume>
+                <lowpassCutoffFrequency indoor="250" outdoor="20000" />
+                <lowpassGain indoor="0.5" outdoor="1" />
+            </active>
+        </sounds>
+    </attachable>
+    <licensePlates>
+        <licensePlate node="licensePlate" position="BACK" preferedType="ELONGATED" placementArea="0.03 0.22 0.08 0.26" />
+    </licensePlates>
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn" node="hydraulicIn01" length="1.2" diameter="0.015" straighteningFactor="3.7" adapterNode="hydraulicIn01_connector">
+            <objectChange node="hydraulicIn01_detached" visibilityActive="false" visibilityInactive="true" />
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut01" length="1.2" diameter="0.015" straighteningFactor="3.7" adapterNode="hydraulicOut01_connector">
+            <objectChange node="hydraulicOut01_detached" visibilityActive="false" visibilityInactive="true" />
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn" node="hydraulicIn02" length="1.2" diameter="0.015" straighteningFactor="3.7" adapterNode="hydraulicIn02_connector">
+            <objectChange node="hydraulicIn02_detached" visibilityActive="false" visibilityInactive="true" />
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut02" length="1.2" diameter="0.015" straighteningFactor="3.7" adapterNode="hydraulicOut02_connector">
+            <objectChange node="hydraulicOut02_detached" visibilityActive="false" visibilityInactive="true" />
+        </hose>
+        <hose inputAttacherJointIndices="1" type="electric" node="electric" length="1.2" diameter="0.008" straighteningFactor="2.8" adapterNode="electric_connector">
+            <objectChange node="electric_detached" visibilityActive="false" visibilityInactive="true" />
+        </hose>
+    </connectionHoses>
+    <powerConsumer forceNode="espro6000RC_main_component1" maxForce="20" ptoRpm="450" neededMaxPtoPower="20" />
+    <lights>
+        <sharedLight linkNode="rearLight40_left" filename="$data/shared/assets/lights/lizard/rearLight40_left.xml" />
+        <sharedLight linkNode="rearLight40_right" filename="$data/shared/assets/lights/lizard/rearLight40_right.xml" />
+        <sharedLight linkNode="plateNumberLight02" filename="$data/shared/assets/lights/lizard/plateNumberLight02.xml" />
+        <realLights>
+            <high>
+                <light node="backLightsHigh1" lightTypes="0" />
+                <light node="licensePlateLightHigh" lightTypes="0" />
+                <light node="workLightBackHigh1" lightTypes="1" />
+                <light node="workLightHopperLeftHigh" lightTypes="1" />
+                <light node="workLightHopperRightHigh" lightTypes="1" />
+                <turnLightLeft node="turnLightLeftBack" />
+                <turnLightRight node="turnLightRightBack" />
+                <brakeLight node="backLightsHigh1" />
+                <reverseLight node="reverseLightHigh1" />
+            </high>
+        </realLights>
+        <staticLightCompounds>
+            <staticLightCompound>
+                <node node="espro6000RCLights_static" intensity="6.5" />
+                <node node="espro6000RCLightsGlass_static" intensity="1.35" />
+            </staticLightCompound>
+        </staticLightCompounds>
+    </lights>
+    <groundReferenceNodes>
+        <groundReferenceNode node="groundReferenceNode" forceFactor="1" threshold="0.2" depthNode="depthNode" />
+        <groundReferenceNode node="ridgeMarkerLeftNode" forceFactor="0" threshold="0.2" depthNode="ridgeMarkerLeftNode" />
+        <groundReferenceNode node="ridgeMarkerRightNode" forceFactor="0" threshold="0.2" depthNode="ridgeMarkerRightNode" />
+    </groundReferenceNodes>
+    <workAreas>
+        <workArea type="sowingMachine" functionName="processSowingMachineArea">
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+            <folding minLimit="0" maxLimit="0.2" />
+            <onlyActiveWhenLowered value="true" />
+        </workArea>
+        <workArea type="ridgemarker" functionName="processRidgeMarkerArea" disableBackwards="false" needsSetIsTurnedOn="false">
+            <ridgeMarkerArea node="ridgeMarkerLeftNode" size="0.1" testAreaOffset="0.75" />
+            <groundReferenceNode index="2" />
+            <onlyActiveWhenLowered value="false" />
+        </workArea>
+        <workArea type="ridgemarker" functionName="processRidgeMarkerArea" disableBackwards="false" needsSetIsTurnedOn="false">
+            <ridgeMarkerArea node="ridgeMarkerRightNode" size="0.1" testAreaOffset="0.75" />
+            <groundReferenceNode index="3" />
+            <onlyActiveWhenLowered value="false" />
+        </workArea>
+    </workAreas>
+    <ridgeMarker onlyActiveWhenLowered="true" foldMinLimit="0.0" foldMaxLimit="0.2">
+        <marker animName="ridgeMarkerLeft" workAreaIndex="2" />
+        <marker animName="ridgeMarkerRight" workAreaIndex="3" />
+    </ridgeMarker>
+    <workParticles>
+        <effect workAreaIndex="1">
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armLeftRow01Effect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armLeftRow01EffectArray.dds" numRows="20" rowLength="18" minFade="0.07" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armCenterRow01Effect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armLeftRow01EffectArray.dds" numRows="20" rowLength="18" minFade="0.07" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armRightRow01Effect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armLeftRow01EffectArray.dds" numRows="20" rowLength="18" minFade="0.07" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armLeftRow02Effect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armLeftRow02EffectArray.dds" numRows="20" rowLength="18" minFade="0.07" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armCenterRow02Effect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armLeftRow02EffectArray.dds" numRows="20" rowLength="18" minFade="0.07" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armRightRow02Effect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armLeftRow02EffectArray.dds" numRows="20" rowLength="18" minFade="0.07" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armLeftRow03Effect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armLeftRow03EffectArray.dds" numRows="20" rowLength="18" minFade="0.07" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armCenterRow03Effect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armCenterRow03EffectArray.dds" numRows="20" rowLength="18" minFade="0.07" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armRightRow03Effect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armRightRow03EffectArray.dds" numRows="20" rowLength="18" minFade="0.07" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armLeftPartBackPartEffect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armLeftPartBackPartEffectArray.dds" numRows="30" rowLength="18" minFade="0.07" densityScale="0.35" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armCenterPartBackPartEffect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armCenterPartBackPartEffectArray.dds" numRows="60" rowLength="18" minFade="0.07" densityScale="0.35" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="armRightPartBackPartEffect">
+                <motionPathEffect textureFilename="$data/vehicles/kuhn/espro6000RC/armLeftPartBackPartEffectArray.dds" numRows="30" rowLength="18" minFade="0.07" densityScale="0.35" />
+            </effectNode>
+        </effect>
+        <effect workAreaIndex="2">
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="ridgeMarkerLeftDiscEffect">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedRidgeMarkerLeftArray.dds" numRows="3" rowLength="18" minFade="0.07" />
+            </effectNode>
+        </effect>
+        <effect workAreaIndex="3">
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="ridgeMarkerRightDiscEffect">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedRidgeMarkerRightArray.dds" numRows="3" rowLength="18" minFade="0.07" />
+            </effectNode>
+        </effect>
+        <particle>
+            <node node="smokeEmitter" refNodeIndex="1" particleType="SOIL_SMOKE" emitCountScale="2" speedThreshold="2" />
+        </particle>
+    </workParticles>
+    <sprayer fillUnitIndex="2" unloadInfoIndex="2" fillVolumeIndex="2">
+        <usageScales workingWidth="6" scale="1" />
+    </sprayer>
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="1" foldMiddleAnimTime="0.0625" turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0.0625">
+                    <foldingPart animationName="folding" speedScale="1.5" />
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+    <animations>
+        <animation name="support">
+            <part node="supportArm" startTime="0.1" endTime="0.5" startRot="0 0 0" endRot="-90 0 0" />
+            <part node="supportArmPart" startTime="0.0" endTime="0.1" startTrans="0 0.345 3.872" endTrans="0.090 0.345 3.872" tangentType="spline" />
+            <part node="supportArmPart" startTime="0.4" endTime="0.5" startTrans="0.090 0.345 3.872" endTrans="0 0.345 3.872" tangentType="spline" />
+            <sound template="clackVar5" startTime="0.1" direction="-1" volumeScale="0.8" pitchScale="1.5" linkNode="attacherJoint" />
+            <sound template="latchSmall" startTime="0.5" direction="1" volumeScale="0.05" pitchScale="1.6" linkNode="attacherJoint" />
+            <sound template="clackVar1" startTime="0.49" direction="1" volumeScale="1.2" pitchScale="2" linkNode="attacherJoint" />
+        </animation>
+        <animation name="lockDrawbarLimit">
+            <part componentJointIndex="1" startTime="0.0" endTime="0.1" startRotLimit="0 90 5" endRotLimit="0 0 0" />
+        </animation>
+        <animation name="folding">
+            <part node="armLeft" startTime="6.5" endTime="16.0" startRot="0 0 0" endRot="0 0 90" tangentType="spline" />
+            <part node="armRight" startTime="1.0" endTime="7.0" startRot="0 0 0" endRot="0 0 -90" tangentType="spline" />
+            <part node="armLeftCatch" startTime="15.5" endTime="16.0" startRot="0 0 20" endRot="0 0 0" />
+            <part node="armRightCatch" startTime="15.5" endTime="16.0" startRot="0 0 -20" endRot="0 0 0" />
+            <part node="armLeftCatch" startTime="2.0" endTime="6.5" startRot="0 0 0" endRot="0 0 20" tangentType="spline" />
+            <part node="armRightCatch" startTime="2.0" endTime="6.5" startRot="0 0 0" endRot="0 0 -20" tangentType="spline" />
+            <part node="podium" startTime="7.5" endTime="8.5" startRot="0 0 0" endRot="0 0 90" />
+            <part node="armCenterPartBack" startTime="12.0" endTime="14.0" startRot="20 0 0" endRot="25 0 0" tangentType="spline" />
+            <part node="armCenterRow04" startTime="2.0" endTime="5.0" startRot="0 0 0" endRot="23 0 0" tangentType="spline" />
+            <sound template="hydraulicOpen05" startTime="7.3" endTime="15.9" volumeScale="1.2" pitchScale="1.5" fadeIn="0.1" fadeOut="0.1" />
+            <sound template="hydraulicClose01" startTime="7.3" endTime="15.9" volumeScale="2.2" pitchScale="0.7" fadeIn="0.1" fadeOut="0.1" />
+            <sound template="hydraulicClose03" startTime="1.1" endTime="6.8" volumeScale="1.8" pitchScale="1.4" fadeIn="0.1" fadeOut="0.1" />
+            <sound template="hydraulicOpen02" startTime="1.1" endTime="6.8" volumeScale="1.4" pitchScale="1.4" fadeIn="0.1" fadeOut="0.1" />
+            <sound template="clackVar5" startTime="15.99" direction="-1" volumeScale="1.2" pitchScale="0.7" />
+            <sound template="clackVar3" startTime="15.99" direction="-1" volumeScale="1.2" pitchScale="0.6" />
+            <sound template="sheetImp01" startTime="15.9" direction="-1" volumeScale="1.6" pitchScale="0.8" />
+            <sound template="clackVar2" startTime="7.3" direction="-1" volumeScale="1.2" pitchScale="0.6" />
+            <sound template="clackVar1" startTime="7.3" direction="-1" volumeScale="1.2" pitchScale="0.8" />
+            <sound template="clackVar5" startTime="7.3" direction="-1" volumeScale="1.2" pitchScale="0.6" />
+            <sound template="sheetImp01" startTime="7.3" direction="-1" volumeScale="1.5" pitchScale="0.8" />
+            <sound template="clackVar5" startTime="8.4" direction="-1" volumeScale="0.8" pitchScale="1.5" />
+            <sound template="clackVar4" startTime="7.5" direction="-1" volumeScale="1.2" pitchScale="1.5" />
+            <sound template="clackVar3" startTime="6.8" direction="-1" volumeScale="1.2" pitchScale="0.8" />
+            <sound template="clackVar1" startTime="6.8" direction="-1" volumeScale="1.2" pitchScale="0.6" />
+            <sound template="clackVar2" startTime="6.8" direction="-1" volumeScale="1.2" pitchScale="1" />
+            <sound template="sheetImp03" startTime="6.8" direction="-1" volumeScale="1.6" pitchScale="0.8" />
+            <sound template="clackVar1" startTime="1.2" direction="-1" volumeScale="1.2" pitchScale="1.4" />
+            <sound template="clackVar2" startTime="1.3" direction="-1" volumeScale="1.2" pitchScale="0.8" />
+            <sound template="clackVar5" startTime="1.2" direction="-1" volumeScale="1.6" pitchScale="0.8" />
+            <sound template="sheetImp01" startTime="1.2" direction="-1" volumeScale="1.8" pitchScale="0.8" />
+            <sound template="clackVar2" startTime="1.1" direction="1" volumeScale="1.6" pitchScale="0.5" />
+            <sound template="clackVar1" startTime="1.1" direction="1" volumeScale="1.2" pitchScale="0.8" />
+            <sound template="clickLong" startTime="1.1" endTime="6.5" direction="1" volumeScale="2.6" pitchScale="0.5" />
+            <sound template="sheetImp02" startTime="1.1" direction="1" volumeScale="2.5" pitchScale="0.8" />
+            <sound template="sheetImp05" startTime="1.1" direction="1" volumeScale="1.5" pitchScale="0.8" />
+            <sound template="clackVar2" startTime="6.7" direction="1" volumeScale="1.9" pitchScale="0.6" />
+            <sound template="clackVar5" startTime="6.8" direction="1" volumeScale="1.2" pitchScale="0.5" />
+            <sound template="clackVar3" startTime="6.8" direction="1" volumeScale="1.2" pitchScale="1" />
+            <sound template="sheetImp01" startTime="6.8" direction="1" volumeScale="1.6" pitchScale="0.7" />
+            <sound template="clackVar5" startTime="7.2" direction="1" volumeScale="1.2" pitchScale="0.7" />
+            <sound template="clackVar3" startTime="7.3" direction="1" volumeScale="1.2" pitchScale="0.6" />
+            <sound template="clackVar2" startTime="7.2" direction="1" volumeScale="1.2" pitchScale="0.5" />
+            <sound template="clickShort" startTime="7.4" endTime="15.5" direction="1" volumeScale="2.6" pitchScale="0.5" />
+            <sound template="clackVar5" startTime="7.4" direction="1" volumeScale="1.2" pitchScale="1.6" />
+            <sound template="hingeSmall" startTime="7.5" direction="1" volumeScale="0.3" pitchScale="1.3" />
+            <sound template="clackVar4" startTime="8.4" direction="1" volumeScale="1.2" pitchScale="1.2" />
+            <sound template="clackVar5" startTime="15.9" direction="1" volumeScale="1.2" pitchScale="0.9" />
+            <sound template="clackVar1" startTime="15.8" direction="1" volumeScale="1.2" pitchScale="0.7" />
+            <sound template="clackVar2" startTime="15.6" direction="1" volumeScale="1.2" pitchScale="0.5" />
+            <sound template="sheetImp01" startTime="15.9" direction="1" volumeScale="1.4" pitchScale="0.6" />
+            <part node="armLeftSupport" startTime="0.0" endTime="1.0" startRot="28 0 0" endRot="0 0 0" />
+            <part node="armCenterSupport" startTime="0.0" endTime="1.0" startRot="28 0 0" endRot="0 0 0" />
+            <part node="armRightSupport" startTime="0.0" endTime="1.0" startRot="28 0 0" endRot="0 0 0" />
+            <part node="armLeftRow01" startTime="0.0" endTime="1.0" startRot="-70 0 0" endRot="0 0 0" />
+            <part node="armLeftRow02" startTime="0.0" endTime="1.0" startRot="-65 0 0" endRot="0 0 0" />
+            <part node="armLeftRow03" startTime="0.0" endTime="1.0" startRot="-38 0 0" endRot="0 0 0" />
+            <part node="armRightRow01" startTime="0.0" endTime="1.0" startRot="-70 0 0" endRot="0 0 0" />
+            <part node="armRightRow02" startTime="0.0" endTime="1.0" startRot="-65 0 0" endRot="0 0 0" />
+            <part node="armRightRow03" startTime="0.0" endTime="1.0" startRot="-38 0 0" endRot="0 0 0" />
+            <part node="armCenterRow01" startTime="0.0" endTime="1.0" startRot="-70 0 0" endRot="0 0 0" />
+            <part node="armCenterRow02" startTime="0.0" endTime="1.0" startRot="-65 0 0" endRot="0 0 0" />
+            <part node="armCenterRow03" startTime="0.0" endTime="1.0" startRot="-38 0 0" endRot="0 0 0" />
+            <part node="armLeftPartBack" startTime="0.0" endTime="1.0" startRot="-10 0 0" endRot="20 0 0" tangentType="spline" />
+            <part node="armCenterPartBack" startTime="0.0" endTime="1.0" startRot="-10 0 0" endRot="20 0 0" tangentType="spline" />
+            <part node="armRightPartBack" startTime="0.0" endTime="1.0" startRot="-10 0 0" endRot="20 0 0" tangentType="spline" />
+            <part node="armLeftPartBackPart" startTime="0.0" endTime="1.0" startRot="10 0 0" endRot="-10 0 0" tangentType="spline" />
+            <part node="armCenterPartBackPart" startTime="0.0" endTime="1.0" startRot="10 0 0" endRot="-10 0 0" tangentType="spline" />
+            <part node="armRightPartBackPart" startTime="0.0" endTime="1.0" startRot="10 0 0" endRot="-10 0 0" tangentType="spline" />
+            <part node="armLeftSidePart" startTime="0.0" endTime="1.0" startRot="-7 0 0" endRot="0 0 0" />
+            <part node="armRightSidePart" startTime="0.0" endTime="1.0" startRot="-7 0 0" endRot="0 0 0" />
+            <sound template="hydraulicOpen05" startTime="0.1" endTime="0.9" volumeScale="1.0" pitchScale="1.5" fadeIn="0.01" fadeOut="0.01" />
+            <sound template="hydraulicClose03" startTime="0.1" endTime="0.9" volumeScale="1.0" pitchScale="1.5" fadeIn="0.01" fadeOut="0.01" />
+            <sound template="clackVar2" startTime="0.99" direction="-1" volumeScale="1.7" pitchScale="0.6" />
+            <sound template="clackVar5" startTime="0.99" direction="-1" volumeScale="1.2" pitchScale="1.1" />
+            <sound template="clackVar2" startTime="0.3" direction="-1" volumeScale="1.2" pitchScale="0.9" />
+            <sound template="clackVar1" startTime="0.3" direction="-1" volumeScale="1.2" pitchScale="0.7" />
+            <sound template="sheetImp01" startTime="0.1" direction="-1" volumeScale="0.8" pitchScale="0.7" />
+            <sound template="clackVar3" startTime="0.1" direction="-1" volumeScale="1.2" pitchScale="0.7" />
+            <sound template="clackVar2" startTime="0.01" direction="1" volumeScale="1.2" pitchScale="0.7" />
+            <sound template="clackVar3" startTime="0.7" direction="1" volumeScale="1.2" pitchScale="0.7" />
+            <sound template="clackVar1" startTime="0.7" direction="1" volumeScale="1.2" pitchScale="1.1" />
+            <sound template="sheetImp06" startTime="0.9" direction="1" volumeScale="1.2" pitchScale="0.5" />
+        </animation>
+        <animation name="ridgeMarkerLeft">
+            <part node="ridgeMarkerLeft" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="0 0 -90" />
+            <part node="ridgeMarkerLeftPart" startTime="0.3" endTime="1.0" startRot="0 0 0" endRot="-8 0 0" />
+            <sound template="hydraulicOpen02" startTime="0.01" endTime="0.99" volumeScale="1.2" pitchScale="1.8" fadeIn="0.1" fadeOut="0.1" linkNode="ridgeMarkerLeft" />
+            <sound template="clackVar6" startTime="0.99" direction="1" volumeScale="1.5" pitchScale="1.2" linkNode="ridgeMarkerLeft" />
+            <sound template="clackVar2" startTime="0.99" direction="1" volumeScale="1.5" pitchScale="2.2" linkNode="ridgeMarkerLeft" />
+            <sound template="clackVar6" startTime="0.01" direction="-1" volumeScale="1.5" pitchScale="1.0" linkNode="ridgeMarkerLeft" />
+            <sound template="clackVar4" startTime="0.01" direction="-1" volumeScale="1.5" pitchScale="1.7" linkNode="ridgeMarkerLeft" />
+            <sound template="vibratingImp" startTime="0.01" direction="-1" volumeScale="1.2" pitchScale="1.4" linkNode="ridgeMarkerLeft" />
+        </animation>
+        <animation name="ridgeMarkerRight">
+            <part node="ridgeMarkerRight" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="0 0 90" />
+            <part node="ridgeMarkerRightPart" startTime="0.3" endTime="1.0" startRot="0 0 0" endRot="-8 0 0" />
+            <sound template="hydraulicOpen02" startTime="0.01" endTime="0.99" volumeScale="1.2" pitchScale="1.5" fadeIn="0.1" fadeOut="0.1" linkNode="ridgeMarkerRight" />
+            <sound template="clackVar6" startTime="0.99" direction="1" volumeScale="1.5" pitchScale="1.1" linkNode="ridgeMarkerRight" />
+            <sound template="clackVar2" startTime="0.99" direction="1" volumeScale="1.5" pitchScale="2.3" linkNode="ridgeMarkerRight" />
+            <sound template="clackVar6" startTime="0.01" direction="-1" volumeScale="1.5" pitchScale="0.9" linkNode="ridgeMarkerRight" />
+            <sound template="clackVar4" startTime="0.01" direction="-1" volumeScale="1.5" pitchScale="1.6" linkNode="ridgeMarkerRight" />
+            <sound template="vibratingImp" startTime="0.01" direction="-1" volumeScale="1.2" pitchScale="1.7" linkNode="ridgeMarkerRight" />
+        </animation>
+        <animation name="toggleCover">
+            <part node="cover_closed" startTime="0.00" endTime="0.05" visibility="true" />
+            <part node="cover_open" startTime="0.00" endTime="0.05" visibility="false" />
+            <part node="cover_closed" startTime="0.05" endTime="0.10" visibility="false" />
+            <part node="cover_open" startTime="0.05" endTime="0.10" visibility="true" />
+            <part node="ladder" startTime="0.00" endTime="1.00" startRot="0 0 0" endRot="0 0 164" tangentType="spline" />
+            <sound template="fabricCover2" startTime="0.01" direction="1" volumeScale="1.4" pitchScale="1.5" />
+            <sound template="fabricCover1" startTime="0.05" direction="-1" volumeScale="1.4" pitchScale="1.8" />
+            <sound template="vibratingImp" startTime="0.01" direction="-1" volumeScale="0.6" pitchScale="1.5" linkNode="ladder" />
+            <sound template="hingeSmall" startTime="0.99" direction="-1" volumeScale="0.3" pitchScale="1.5" linkNode="ladder" />
+            <sound template="vibratingImp" startTime="0.99" direction="1" volumeScale="0.6" pitchScale="1.5" linkNode="ladder" />
+            <sound template="hingeMedium" startTime="0.1" direction="1" volumeScale="0.8" pitchScale="0.7" linkNode="attacherJoint" />
+        </animation>
+    </animations>
+    <cylindered>
+        <movingTools>
+            <movingTool node="armLeft" wheelIndices="1 5">
+                <dependentPart node="mainHydraulic" />
+            </movingTool>
+            <movingTool node="armRight" wheelIndices="4 6">
+                <dependentPart node="mainHydraulic" />
+            </movingTool>
+            <movingTool node="ladder">
+                <dependentPart node="ladderSpring" />
+            </movingTool>
+            <movingTool node="armLeftCatch">
+                <dependentPart node="armLeftCatchSpring" />
+            </movingTool>
+            <movingTool node="armRightCatch">
+                <dependentPart node="armRightCatchSpring" />
+                <dependentPart node="armRightCatchHydraulic" />
+            </movingTool>
+            <movingTool node="armLeftSupport" wheelIndices="5">
+                <dependentPart node="armLeftSupportHydraulic" />
+            </movingTool>
+            <movingTool node="armRightSupport" wheelIndices="6">
+                <dependentPart node="armRightSupportHydraulic" />
+            </movingTool>
+            <movingTool node="armCenterSupport" wheelIndices="7">
+                <dependentPart node="armCenterSupportHydraulic" />
+            </movingTool>
+            <movingTool node="armCenterRow02">
+                <dependentPart node="armCenterRow02Hydraulic" />
+                <dependentPart node="armCenterRow01Part" />
+            </movingTool>
+            <movingTool node="armCenterRow03">
+                <dependentPart node="armCenterRow03Hydraulic" />
+            </movingTool>
+            <movingTool node="armLeftRow02">
+                <dependentPart node="armLeftRow02Hydraulic" />
+                <dependentPart node="armLeftRow01Part" />
+            </movingTool>
+            <movingTool node="armLeftRow03">
+                <dependentPart node="armLeftRow03Hydraulic" />
+            </movingTool>
+            <movingTool node="armRightRow02">
+                <dependentPart node="armRightRow02Hydraulic" />
+                <dependentPart node="armRightRow01Part" />
+            </movingTool>
+            <movingTool node="armRightRow03">
+                <dependentPart node="armRightRow03Hydraulic" />
+            </movingTool>
+            <movingTool node="armLeftPartBack">
+                <dependentPart node="armLeftPartBackHydraulic01" />
+                <dependentPart node="armLeftPartBackHydraulic02" />
+            </movingTool>
+            <movingTool node="armLeftPartBackPart">
+                <dependentPart node="armLeftPartBackHydraulic02" />
+            </movingTool>
+            <movingTool node="armRightPartBack">
+                <dependentPart node="armRightPartBackHydraulic01" />
+                <dependentPart node="armRightPartBackHydraulic02" />
+            </movingTool>
+            <movingTool node="armRightPartBackPart">
+                <dependentPart node="armRightPartBackHydraulic02" />
+            </movingTool>
+            <movingTool node="armCenterPartBack">
+                <dependentPart node="armCenterPartBackHydraulic01" />
+                <dependentPart node="armCenterPartBackHydraulic02" />
+            </movingTool>
+            <movingTool node="armCenterPartBackPart">
+                <dependentPart node="armCenterPartBackHydraulic02" />
+            </movingTool>
+            <movingTool node="armCenterRow04">
+                <dependentPart node="armCenterRow04Hydraulic" />
+            </movingTool>
+            <movingTool node="ridgeMarkerLeft">
+                <dependentPart node="ridgeMarkerLeftHydraulic" />
+            </movingTool>
+            <movingTool node="ridgeMarkerRight">
+                <dependentPart node="ridgeMarkerRightHydraulic" />
+            </movingTool>
+        </movingTools>
+        <movingParts>
+            <movingPart node="drawbarYRot" referencePoint="drawbarYRotRef" referenceFrame="drawbarYRotRef" limitedAxis="2" isActiveDirty="true" maxUpdateDistance="300" />
+            <movingPart node="drawbarXRot" referencePoint="drawbarXRotRef" referenceFrame="drawbarXRotRef" limitedAxis="1" isActiveDirty="true" maxUpdateDistance="300" />
+            <movingPart node="mainHydraulic" referencePoint="mainHydraulicRef" referenceFrame="mainHydraulicRefFrame">
+                <translatingPart node="mainHydraulicPunch" />
+            </movingPart>
+            <movingPart node="armLeftCatchSpring" referencePoint="armLeftCatchSpringRef" referenceFrame="armLeftCatchSpringRef" scaleZ="true" />
+            <movingPart node="armRightCatchSpring" referencePoint="armRightCatchSpringRef" referenceFrame="armRightCatchSpringRef" scaleZ="true" />
+            <movingPart node="armRightCatchHydraulic" referencePoint="armRightCatchHydraulicRef" referenceFrame="armRightCatchHydraulicRef">
+                <translatingPart node="armRightCatchHydraulicPunch" />
+            </movingPart>
+            <movingPart node="ladderSpring" referencePoint="ladderSpringRef" referenceFrame="ladderSpringRef" scaleZ="true" />
+            <movingPart node="armLeftSupportHydraulic" referencePoint="armLeftSupportHydraulicRef" referenceFrame="armLeftSupportHydraulicRef">
+                <translatingPart node="armLeftSupportHydraulicPunch" />
+            </movingPart>
+            <movingPart node="armRightSupportHydraulic" referencePoint="armRightSupportHydraulicRef" referenceFrame="armRightSupportHydraulicRef">
+                <translatingPart node="armRightSupportHydraulicPunch" />
+            </movingPart>
+            <movingPart node="armCenterSupportHydraulic" referencePoint="armCenterSupportHydraulicRef" referenceFrame="armCenterSupportHydraulicRef">
+                <translatingPart node="armCenterSupportHydraulicPunch" />
+            </movingPart>
+            <movingPart node="armCenterRow02Hydraulic" referencePoint="armCenterRow02HydraulicRef" referenceFrame="armCenterRow02HydraulicRef">
+                <translatingPart node="armCenterRow02HydraulicPunch" />
+            </movingPart>
+            <movingPart node="armCenterRow01Part" referencePoint="armCenterRow01PartRef" referenceFrame="armCenterRow01PartRef" />
+            <movingPart node="armCenterRow03Hydraulic" referencePoint="armCenterRow03HydraulicRef" referenceFrame="armCenterRow03HydraulicRef">
+                <translatingPart node="armCenterRow03HydraulicPunch" />
+            </movingPart>
+            <movingPart node="armLeftRow02Hydraulic" referencePoint="armLeftRow02HydraulicRef" referenceFrame="armLeftRow02HydraulicRef">
+                <translatingPart node="armLeftRow02HydraulicPunch" />
+            </movingPart>
+            <movingPart node="armLeftRow01Part" referencePoint="armLeftRow01PartRef" referenceFrame="armLeftRow01PartRef" />
+            <movingPart node="armLeftRow03Hydraulic" referencePoint="armLeftRow03HydraulicRef" referenceFrame="armLeftRow03HydraulicRef">
+                <translatingPart node="armLeftRow03HydraulicPunch" />
+            </movingPart>
+            <movingPart node="armRightRow02Hydraulic" referencePoint="armRightRow02HydraulicRef" referenceFrame="armRightRow02HydraulicRef">
+                <translatingPart node="armRightRow02HydraulicPunch" />
+            </movingPart>
+            <movingPart node="armRightRow01Part" referencePoint="armRightRow01PartRef" referenceFrame="armRightRow01PartRef" />
+            <movingPart node="armRightRow03Hydraulic" referencePoint="armRightRow03HydraulicRef" referenceFrame="armRightRow03HydraulicRef">
+                <translatingPart node="armRightRow03HydraulicPunch" />
+            </movingPart>
+            <movingPart node="armLeftPartBackHydraulic01" referencePoint="armLeftPartBackHydraulic01Ref" referenceFrame="armLeftPartBackHydraulic01Ref">
+                <translatingPart node="armLeftPartBackHydraulic01Punch" />
+            </movingPart>
+            <movingPart node="armLeftPartBackHydraulic02" referencePoint="armLeftPartBackHydraulic02Ref" referenceFrame="armLeftPartBackHydraulic02Ref">
+                <translatingPart node="armLeftPartBackHydraulic02Punch" />
+            </movingPart>
+            <movingPart node="armRightPartBackHydraulic01" referencePoint="armRightPartBackHydraulic01Ref" referenceFrame="armRightPartBackHydraulic01Ref">
+                <translatingPart node="armRightPartBackHydraulic01Punch" />
+            </movingPart>
+            <movingPart node="armRightPartBackHydraulic02" referencePoint="armRightPartBackHydraulic02Ref" referenceFrame="armRightPartBackHydraulic02Ref">
+                <translatingPart node="armRightPartBackHydraulic02Punch" />
+            </movingPart>
+            <movingPart node="armCenterPartBackHydraulic01" referencePoint="armCenterPartBackHydraulic01Ref" referenceFrame="armCenterPartBackHydraulic01Ref">
+                <translatingPart node="armCenterPartBackHydraulic01Punch" />
+            </movingPart>
+            <movingPart node="armCenterPartBackHydraulic02" referencePoint="armCenterPartBackHydraulic02Ref" referenceFrame="armCenterPartBackHydraulic02Ref">
+                <translatingPart node="armCenterPartBackHydraulic02Punch" />
+            </movingPart>
+            <movingPart node="armCenterRow04Hydraulic" referencePoint="armCenterRow04HydraulicRef" referenceFrame="armCenterRow04HydraulicRef">
+                <translatingPart node="armCenterRow04HydraulicPunch" />
+            </movingPart>
+            <movingPart node="ridgeMarkerLeftHydraulic" referencePoint="ridgeMarkerLeftHydraulicRef" referenceFrame="ridgeMarkerLeftHydraulicRef">
+                <translatingPart node="ridgeMarkerLeftHydraulicPunch" />
+            </movingPart>
+            <movingPart node="ridgeMarkerRightHydraulic" referencePoint="ridgeMarkerRightHydraulicRef" referenceFrame="ridgeMarkerRightHydraulicRef">
+                <translatingPart node="ridgeMarkerRightHydraulicPunch" />
+            </movingPart>
+        </movingParts>
+    </cylindered>
+    <fillUnit>
+        <fillUnitConfigurations title="Tank capacity">
+            <fillUnitConfiguration name="Standard 5,500 L each" price="0" saveId="STANDARD_5500" isDefault="true">
+                <fillUnits>
+                    <unloading width="12.5" offset="0 0 -6" />
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="seeds" capacity="5500" showOnInfoHud="true">
+                        <exactFillRootNode node="exactFillRootNodeSeeds" extraEffectDistance="6.0" />
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="fertilizer" capacity="5500" showOnInfoHud="true" showInShop="false">
+                        <exactFillRootNode node="exactFillRootNodeFertilizer" extraEffectDistance="6.0" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration name="XL 7,500 L each" price="7500" saveId="XL_7500">
+                <fillUnits>
+                    <unloading width="12.5" offset="0 0 -6" />
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="seeds" capacity="7500" showOnInfoHud="true">
+                        <exactFillRootNode node="exactFillRootNodeSeeds" extraEffectDistance="6.0" />
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="fertilizer" capacity="7500" showOnInfoHud="true" showInShop="false">
+                        <exactFillRootNode node="exactFillRootNodeFertilizer" extraEffectDistance="6.0" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration name="Pro 10,000 L each" price="15000" saveId="PRO_10000">
+                <fillUnits>
+                    <unloading width="12.5" offset="0 0 -6" />
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="seeds" capacity="10000" showOnInfoHud="true">
+                        <exactFillRootNode node="exactFillRootNodeSeeds" extraEffectDistance="6.0" />
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="fertilizer" capacity="10000" showOnInfoHud="true" showInShop="false">
+                        <exactFillRootNode node="exactFillRootNodeFertilizer" extraEffectDistance="6.0" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolumeSeeds" fillUnitIndex="1" maxDelta="0.1" />
+                    <volume node="fillVolumeFertilizer" fillUnitIndex="2" maxDelta="0.1" />
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+        <unloadInfos>
+            <unloadInfo>
+                <node node="unloadNodeSeeds" width="0.4" length="0.1" />
+            </unloadInfo>
+            <unloadInfo>
+                <node node="unloadNodeFertilizer" width="0.4" length="0.1" />
+            </unloadInfo>
+        </unloadInfos>
+        <loadInfos>
+            <loadInfo>
+                <node node="loadNodeSeeds" width="0.4" length="0.1" />
+            </loadInfo>
+            <loadInfo>
+                <node node="loadNodeFertilizer" width="0.4" length="0.1" />
+            </loadInfo>
+        </loadInfos>
+    </fillVolume>
+    <sowingMachine fillUnitIndex="1">
+        <seedFruitTypeCategories>sowingMachine</seedFruitTypeCategories>
+        <needsActivation value="true" />
+        <useDirectPlanting value="true" />
+        <fieldGroundType value="SOWN" />
+        <sounds>
+            <work template="defaultSowingWork" linkNode="espro6000RC_main_component1" volumeScale="1.28" pitchScale="0.97" />
+            <airBlower template="defaultSowingAirBlower" linkNode="espro6000RC_main_component1" volumeScale="1.18" pitchScale="0.96" />
+        </sounds>
+    </sowingMachine>
+    <cover>
+        <coverConfigurations>
+            <coverConfiguration>
+                <cover openAnimation="toggleCover" openAnimationStopTime="0" closeAnimation="toggleCover" closeAnimationStopTime="1" fillUnitIndices="1 2" openOnBuy="false" autoReactToTrigger="true" />
+            </coverConfiguration>
+        </coverConfigurations>
+    </cover>
+    <turnOnVehicle turnOffIfNotAllowed="true" />
+    <ai>
+        <needsLowering value="true" />
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack" />
+        <collisionTrigger node="aiCollisionNode" width="6.15" height="3.3" />
+        <allowTurnBackward value="false" />
+        <turningRadiusLimitation rotationJointNode="drawbarJoint" wheelIndices="2 3" />
+        <toolReverserDirectionNode node="aiMarkerBack" />
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2 3 4" width="3.05" height="3.3" length="7.6" lengthOffset="0.7" />
+    </ai>
+    <foliageBending>
+        <bendingNode minX="-1.2" maxX="1.2" minZ="-2.7" maxZ="2.05" yOffset="0.3" />
+        <bendingNode minX="-0.3" maxX="0.3" minZ="2.0" maxZ="4.5" yOffset="0.4" />
+        <bendingNode minX="-1.2" maxX="1.2" minZ="-1.3" maxZ="0.4" yOffset="-0.0735" node="armCenterPartBackPart" />
+        <bendingNode minX="0.34" maxX="2.25" minZ="-4.4" maxZ="2.05" yOffset="-0.268" node="armLeft" />
+        <bendingNode minX="-2.25" maxX="-0.34" minZ="-4.4" maxZ="2.05" yOffset="-0.268" node="armRight" />
+    </foliageBending>
+    <designColorConfigurations title="Frame colour" useDefaultColors="false" defaultColorMaterialTemplateName="calibratedPaint">
+        <designColorConfiguration name="KUHN Red" price="0" saveId="KUHN_RED" color="0.8811 0.0463 0.0100" isDefault="true" />
+        <designColorConfiguration name="Jet Black" price="650" saveId="JET_BLACK" color="0.0080 0.0080 0.0080" />
+        <designColorConfiguration name="Graphite" price="650" saveId="GRAPHITE" color="0.0350 0.0400 0.0450" />
+        <designColorConfiguration name="Charcoal Grey" price="650" saveId="CHARCOAL_GREY" color="0.0700 0.0720 0.0750" />
+        <designColorConfiguration name="Slate Grey" price="650" saveId="SLATE_GREY" color="0.1500 0.1600 0.1700" />
+        <designColorConfiguration name="Stone Grey" price="650" saveId="STONE_GREY" color="0.2500 0.2550 0.2600" />
+        <designColorConfiguration name="Arctic White" price="650" saveId="ARCTIC_WHITE" color="0.7800 0.7800 0.7800" />
+        <designColorConfiguration name="Ivory Cream" price="650" saveId="IVORY_CREAM" color="0.7600 0.7350 0.6500" />
+        <designColorConfiguration name="Beige Sand" price="650" saveId="BEIGE_SAND" color="0.5200 0.4700 0.3600" />
+        <designColorConfiguration name="Farm Blue" price="650" saveId="FARM_BLUE" color="0.0250 0.2100 0.5200" />
+        <designColorConfiguration name="Cobalt Blue" price="650" saveId="COBALT_BLUE" color="0.0350 0.1450 0.6500" />
+        <designColorConfiguration name="Deep Navy" price="650" saveId="DEEP_NAVY" color="0.0100 0.0550 0.1800" />
+        <designColorConfiguration name="Sky Blue" price="650" saveId="SKY_BLUE" color="0.2400 0.4800 0.7800" />
+        <designColorConfiguration name="Teal" price="650" saveId="TEAL" color="0.0200 0.3200 0.3200" />
+        <designColorConfiguration name="Forest Green" price="650" saveId="FOREST_GREEN" color="0.0250 0.1800 0.0700" />
+        <designColorConfiguration name="Olive Green" price="650" saveId="OLIVE_GREEN" color="0.2200 0.2700 0.0800" />
+        <designColorConfiguration name="Lime Green" price="650" saveId="LIME_GREEN" color="0.1900 0.5200 0.0350" />
+        <designColorConfiguration name="JD Green" price="650" saveId="JD_GREEN" color="0.0500 0.2600 0.0800" />
+        <designColorConfiguration name="Claas Green" price="650" saveId="CLAAS_GREEN" color="0.0600 0.4200 0.1800" />
+        <designColorConfiguration name="Safety Yellow" price="650" saveId="SAFETY_YELLOW" color="0.8500 0.5600 0.0150" />
+        <designColorConfiguration name="Sunflower Yellow" price="650" saveId="SUNFLOWER_YELLOW" color="0.9300 0.7600 0.0400" />
+        <designColorConfiguration name="Burnt Orange" price="650" saveId="BURNT_ORANGE" color="0.8400 0.1800 0.0200" />
+        <designColorConfiguration name="Tangerine Orange" price="650" saveId="TANGERINE_ORANGE" color="0.9600 0.3500 0.0400" />
+        <designColorConfiguration name="Copper Brown" price="650" saveId="COPPER_BROWN" color="0.3600 0.1800 0.0700" />
+        <designColorConfiguration name="Burgundy" price="650" saveId="BURGUNDY" color="0.2600 0.0150 0.0250" />
+        <designColorConfiguration name="Cherry Red" price="650" saveId="CHERRY_RED" color="0.7000 0.0300 0.0500" />
+        <designColorConfiguration name="Crimson" price="650" saveId="CRIMSON" color="0.5000 0.0200 0.0400" />
+        <designColorConfiguration name="Royal Purple" price="650" saveId="ROYAL_PURPLE" color="0.1900 0.0300 0.3000" />
+        <designColorConfiguration name="Plum Purple" price="650" saveId="PLUM_PURPLE" color="0.2800 0.0800 0.2500" />
+        <designColorConfiguration name="Rose Pink" price="650" saveId="ROSE_PINK" color="0.6200 0.1800 0.3400" />
+        <designColorConfiguration name="Metallic Red" price="1250" saveId="METALLIC_RED" color="0.6200 0.0300 0.0200" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Metallic Black" price="1250" saveId="METALLIC_BLACK" color="0.0180 0.0200 0.0230" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Gunmetal Metallic" price="1250" saveId="GUNMETAL_METALLIC" color="0.0900 0.1050 0.1200" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Silver Metallic" price="1250" saveId="SILVER_METALLIC" color="0.4200 0.4400 0.4700" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Blue Metallic" price="1250" saveId="BLUE_METALLIC" color="0.0200 0.1100 0.3800" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Green Metallic" price="1250" saveId="GREEN_METALLIC" color="0.0180 0.1900 0.0800" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Orange Metallic" price="1250" saveId="ORANGE_METALLIC" color="0.6200 0.1050 0.0180" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Bronze Metallic" price="1500" saveId="BRONZE_METALLIC" color="0.3000 0.1450 0.0450" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Gold Metallic" price="1750" saveId="GOLD_METALLIC" color="0.5000 0.3150 0.0450" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Titanium Metallic" price="1500" saveId="TITANIUM_METALLIC" color="0.1900 0.2050 0.2200" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Copper Metallic" price="1500" saveId="COPPER_METALLIC" color="0.4600 0.2000 0.0800" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Ruby Metallic" price="1500" saveId="RUBY_METALLIC" color="0.4700 0.0400 0.0900" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Emerald Metallic" price="1500" saveId="EMERALD_METALLIC" color="0.0200 0.2600 0.1300" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Sapphire Metallic" price="1500" saveId="SAPPHIRE_METALLIC" color="0.0400 0.1800 0.5200" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Pearl White Metallic" price="1500" saveId="PEARL_WHITE_METALLIC" color="0.6500 0.6600 0.6800" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Amethyst Metallic" price="1500" saveId="AMETHYST_METALLIC" color="0.2800 0.1100 0.3600" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColorConfiguration name="Matte Black" price="1300" saveId="MATTE_BLACK" color="0.0080 0.0080 0.0080" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Graphite" price="1300" saveId="MATTE_GRAPHITE" color="0.0350 0.0400 0.0450" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte White" price="1300" saveId="MATTE_WHITE" color="0.7800 0.7800 0.7800" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Red" price="1300" saveId="MATTE_RED" color="0.7000 0.0300 0.0400" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Burgundy" price="1300" saveId="MATTE_BURGUNDY" color="0.2600 0.0150 0.0250" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Blue" price="1300" saveId="MATTE_BLUE" color="0.0250 0.2100 0.5200" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Navy" price="1300" saveId="MATTE_NAVY" color="0.0100 0.0550 0.1800" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Teal" price="1300" saveId="MATTE_TEAL" color="0.0200 0.3200 0.3200" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Green" price="1300" saveId="MATTE_GREEN" color="0.0250 0.1800 0.0700" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Olive" price="1300" saveId="MATTE_OLIVE" color="0.2200 0.2700 0.0800" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Orange" price="1300" saveId="MATTE_ORANGE" color="0.8400 0.1800 0.0200" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Yellow" price="1300" saveId="MATTE_YELLOW" color="0.8500 0.5600 0.0150" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Purple" price="1300" saveId="MATTE_PURPLE" color="0.1900 0.0300 0.3000" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Matte Sand" price="1300" saveId="MATTE_SAND" color="0.5200 0.4700 0.3600" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColorConfiguration name="Mirror Chrome" price="2200" saveId="MIRROR_CHROME" materialTemplateName="chrome" isMetallic="true" />
+        <designColorConfiguration name="Polished Aluminium" price="1900" saveId="POLISHED_ALUMINIUM" color="0.8200 0.8400 0.8600" materialTemplateName="chrome" isMetallic="true" />
+        <designColorConfiguration name="Polished Steel" price="1900" saveId="POLISHED_STEEL" materialTemplateName="silverScratched" isMetallic="true" />
+        <designColorConfiguration name="Black Chrome" price="2200" saveId="BLACK_CHROME" color="0.0500 0.0550 0.0600" materialTemplateName="chrome" isMetallic="true" />
+        <designColorConfiguration name="Red Chrome" price="2200" saveId="RED_CHROME" color="0.6200 0.0300 0.0200" materialTemplateName="chrome" isMetallic="true" />
+        <designColorConfiguration name="Blue Chrome" price="2200" saveId="BLUE_CHROME" color="0.0300 0.1400 0.4800" materialTemplateName="chrome" isMetallic="true" />
+        <designColorConfiguration name="Gold Chrome" price="2500" saveId="GOLD_CHROME" color="0.6200 0.4100 0.0600" materialTemplateName="chrome" isMetallic="true" />
+        <designColorConfiguration name="Copper Chrome" price="2400" saveId="COPPER_CHROME" color="0.4800 0.2200 0.0800" materialTemplateName="chrome" isMetallic="true" />
+        <designColorConfiguration name="Agricultural Blue" price="650" saveId="AGRICULTURAL_BLUE" color="0.0250 0.2100 0.5200" />
+        <material materialSlotName="EsproFrameColour" />
+    </designColorConfigurations>
+    <designColor2Configurations title="Hopper colour" useDefaultColors="false" defaultColorMaterialTemplateName="calibratedPaint">
+        <designColor2Configuration name="Factory White" price="0" saveId="FACTORY_WHITE" color="0.5234 0.5234 0.5234" isDefault="true" />
+        <designColor2Configuration name="KUHN Red" price="500" saveId="KUHN_RED" color="0.8811 0.0463 0.0100" />
+        <designColor2Configuration name="Jet Black" price="500" saveId="JET_BLACK" color="0.0100 0.0100 0.0100" />
+        <designColor2Configuration name="Graphite" price="500" saveId="GRAPHITE" color="0.0450 0.0500 0.0550" />
+        <designColor2Configuration name="Slate Grey" price="500" saveId="SLATE_GREY" color="0.1500 0.1600 0.1700" />
+        <designColor2Configuration name="Stone Grey" price="500" saveId="STONE_GREY" color="0.2500 0.2550 0.2600" />
+        <designColor2Configuration name="Arctic White" price="500" saveId="ARCTIC_WHITE" color="0.7800 0.7800 0.7800" />
+        <designColor2Configuration name="Ivory Cream" price="500" saveId="IVORY_CREAM" color="0.7600 0.7350 0.6500" />
+        <designColor2Configuration name="Beige Sand" price="500" saveId="BEIGE_SAND" color="0.5200 0.4700 0.3600" />
+        <designColor2Configuration name="Farm Blue" price="500" saveId="FARM_BLUE" color="0.0250 0.2100 0.5200" />
+        <designColor2Configuration name="Cobalt Blue" price="500" saveId="COBALT_BLUE" color="0.0350 0.1450 0.6500" />
+        <designColor2Configuration name="Sky Blue" price="500" saveId="SKY_BLUE" color="0.2400 0.4800 0.7800" />
+        <designColor2Configuration name="Teal" price="500" saveId="TEAL" color="0.0200 0.3200 0.3200" />
+        <designColor2Configuration name="Forest Green" price="500" saveId="FOREST_GREEN" color="0.0250 0.1800 0.0700" />
+        <designColor2Configuration name="Olive Green" price="500" saveId="OLIVE_GREEN" color="0.2200 0.2700 0.0800" />
+        <designColor2Configuration name="Lime Green" price="500" saveId="LIME_GREEN" color="0.1900 0.5200 0.0350" />
+        <designColor2Configuration name="Safety Yellow" price="500" saveId="SAFETY_YELLOW" color="0.8500 0.5600 0.0150" />
+        <designColor2Configuration name="Sunflower Yellow" price="500" saveId="SUNFLOWER_YELLOW" color="0.9300 0.7600 0.0400" />
+        <designColor2Configuration name="Burnt Orange" price="500" saveId="BURNT_ORANGE" color="0.8400 0.1800 0.0200" />
+        <designColor2Configuration name="Tangerine Orange" price="500" saveId="TANGERINE_ORANGE" color="0.9600 0.3500 0.0400" />
+        <designColor2Configuration name="Burgundy" price="500" saveId="BURGUNDY" color="0.2600 0.0150 0.0250" />
+        <designColor2Configuration name="Cherry Red" price="500" saveId="CHERRY_RED" color="0.7000 0.0300 0.0500" />
+        <designColor2Configuration name="Royal Purple" price="500" saveId="ROYAL_PURPLE" color="0.1900 0.0300 0.3000" />
+        <designColor2Configuration name="Rose Pink" price="500" saveId="ROSE_PINK" color="0.6200 0.1800 0.3400" />
+        <designColor2Configuration name="Pearl White Metallic" price="1000" saveId="PEARL_WHITE_METALLIC" color="0.6500 0.6600 0.6800" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Metallic Black" price="1000" saveId="METALLIC_BLACK" color="0.0180 0.0200 0.0230" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Gunmetal Metallic" price="1000" saveId="GUNMETAL_METALLIC" color="0.0900 0.1050 0.1200" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Silver Metallic" price="1000" saveId="SILVER_METALLIC" color="0.4200 0.4400 0.4700" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Metallic Red" price="1000" saveId="METALLIC_RED" color="0.6200 0.0300 0.0200" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Blue Metallic" price="1000" saveId="BLUE_METALLIC" color="0.0200 0.1100 0.3800" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Green Metallic" price="1000" saveId="GREEN_METALLIC" color="0.0180 0.1900 0.0800" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Orange Metallic" price="1000" saveId="ORANGE_METALLIC" color="0.6200 0.1050 0.0180" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Bronze Metallic" price="1250" saveId="BRONZE_METALLIC" color="0.3000 0.1450 0.0450" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Gold Metallic" price="1500" saveId="GOLD_METALLIC" color="0.5000 0.3150 0.0450" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Titanium Metallic" price="1250" saveId="TITANIUM_METALLIC" color="0.1900 0.2050 0.2200" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Copper Metallic" price="1250" saveId="COPPER_METALLIC" color="0.4600 0.2000 0.0800" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Ruby Metallic" price="1250" saveId="RUBY_METALLIC" color="0.4700 0.0400 0.0900" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Emerald Metallic" price="1250" saveId="EMERALD_METALLIC" color="0.0200 0.2600 0.1300" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Sapphire Metallic" price="1250" saveId="SAPPHIRE_METALLIC" color="0.0400 0.1800 0.5200" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Amethyst Metallic" price="1250" saveId="AMETHYST_METALLIC" color="0.2800 0.1100 0.3600" materialTemplateName="calibratedMetallicPaint" isMetallic="true" />
+        <designColor2Configuration name="Matte Black" price="1100" saveId="MATTE_BLACK" color="0.0080 0.0080 0.0080" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Graphite" price="1100" saveId="MATTE_GRAPHITE" color="0.0350 0.0400 0.0450" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte White" price="1100" saveId="MATTE_WHITE" color="0.7800 0.7800 0.7800" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Red" price="1100" saveId="MATTE_RED" color="0.7000 0.0300 0.0400" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Burgundy" price="1100" saveId="MATTE_BURGUNDY" color="0.2600 0.0150 0.0250" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Blue" price="1100" saveId="MATTE_BLUE" color="0.0250 0.2100 0.5200" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Navy" price="1100" saveId="MATTE_NAVY" color="0.0100 0.0550 0.1800" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Teal" price="1100" saveId="MATTE_TEAL" color="0.0200 0.3200 0.3200" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Green" price="1100" saveId="MATTE_GREEN" color="0.0250 0.1800 0.0700" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Olive" price="1100" saveId="MATTE_OLIVE" color="0.2200 0.2700 0.0800" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Orange" price="1100" saveId="MATTE_ORANGE" color="0.8400 0.1800 0.0200" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Yellow" price="1100" saveId="MATTE_YELLOW" color="0.8500 0.5600 0.0150" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Purple" price="1100" saveId="MATTE_PURPLE" color="0.1900 0.0300 0.3000" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Matte Sand" price="1100" saveId="MATTE_SAND" color="0.5200 0.4700 0.3600" materialTemplateName="calibratedMatPaint" isMat="true" />
+        <designColor2Configuration name="Mirror Chrome" price="1800" saveId="MIRROR_CHROME" materialTemplateName="chrome" isMetallic="true" />
+        <designColor2Configuration name="Polished Aluminium" price="1600" saveId="POLISHED_ALUMINIUM" color="0.8200 0.8400 0.8600" materialTemplateName="chrome" isMetallic="true" />
+        <designColor2Configuration name="Polished Steel" price="1600" saveId="POLISHED_STEEL" materialTemplateName="silverScratched" isMetallic="true" />
+        <designColor2Configuration name="Black Chrome" price="1800" saveId="BLACK_CHROME" color="0.0500 0.0550 0.0600" materialTemplateName="chrome" isMetallic="true" />
+        <designColor2Configuration name="Red Chrome" price="1800" saveId="RED_CHROME" color="0.6200 0.0300 0.0200" materialTemplateName="chrome" isMetallic="true" />
+        <designColor2Configuration name="Blue Chrome" price="1800" saveId="BLUE_CHROME" color="0.0300 0.1400 0.4800" materialTemplateName="chrome" isMetallic="true" />
+        <designColor2Configuration name="Gold Chrome" price="2100" saveId="GOLD_CHROME" color="0.6200 0.4100 0.0600" materialTemplateName="chrome" isMetallic="true" />
+        <designColor2Configuration name="Copper Chrome" price="2000" saveId="COPPER_CHROME" color="0.4800 0.2200 0.0800" materialTemplateName="chrome" isMetallic="true" />
+        <material materialSlotName="EsproHopperColour" />
+    </designColor2Configurations>
+    <design3Configurations title="Special edition">
+        <design3Configuration name="Factory" price="0" saveId="EDITION_FACTORY" isDefault="true" />
+        <design3Configuration name="Black Edition" price="1500" saveId="EDITION_BLACK">
+            <dependentConfiguration name="designColor" index="32" />
+            <dependentConfiguration name="designColor2" index="26" />
+        </design3Configuration>
+        <design3Configuration name="Stealth Edition" price="1750" saveId="EDITION_STEALTH">
+            <dependentConfiguration name="designColor" index="47" />
+            <dependentConfiguration name="designColor2" index="42" />
+        </design3Configuration>
+        <design3Configuration name="Gold Edition" price="3000" saveId="EDITION_GOLD">
+            <dependentConfiguration name="designColor" index="67" />
+            <dependentConfiguration name="designColor2" index="26" />
+        </design3Configuration>
+        <design3Configuration name="Chrome Edition" price="3000" saveId="EDITION_CHROME">
+            <dependentConfiguration name="designColor" index="61" />
+            <dependentConfiguration name="designColor2" index="56" />
+        </design3Configuration>
+        <design3Configuration name="Redline Edition" price="1800" saveId="EDITION_REDLINE">
+            <dependentConfiguration name="designColor" index="31" />
+            <dependentConfiguration name="designColor2" index="26" />
+        </design3Configuration>
+    </design3Configurations>
+    <wearable wearDuration="600" workMultiplier="4" fieldMultiplier="2" />
+    <washable dirtDuration="75" washDuration="1" workMultiplier="5" fieldMultiplier="2" />
+    <i3dMappings>
+        <i3dMapping id="espro6000RC_main_component1" node="0&gt;" />
+        <i3dMapping id="espro6000RC_vis" node="0&gt;0" />
+        <i3dMapping id="drawbarJoint" node="0&gt;0|0" />
+        <i3dMapping id="supportArm" node="0&gt;0|1|0|0" />
+        <i3dMapping id="supportArmPart" node="0&gt;0|1|0|1" />
+        <i3dMapping id="connectionHoses" node="0&gt;0|1|2" />
+        <i3dMapping id="hydraulicIn01" node="0&gt;0|1|2|0" />
+        <i3dMapping id="hydraulicIn01_detached" node="0&gt;0|1|2|0|0" />
+        <i3dMapping id="hydraulicIn01_connector" node="0&gt;0|1|2|0|0|0" />
+        <i3dMapping id="hydraulicOut01" node="0&gt;0|1|2|1" />
+        <i3dMapping id="hydraulicOut01_detached" node="0&gt;0|1|2|1|0" />
+        <i3dMapping id="hydraulicOut01_connector" node="0&gt;0|1|2|1|0|0" />
+        <i3dMapping id="hydraulicIn02" node="0&gt;0|1|2|2" />
+        <i3dMapping id="hydraulicIn02_detached" node="0&gt;0|1|2|2|0" />
+        <i3dMapping id="hydraulicIn02_connector" node="0&gt;0|1|2|2|0|0" />
+        <i3dMapping id="hydraulicOut02" node="0&gt;0|1|2|3" />
+        <i3dMapping id="hydraulicOut02_detached" node="0&gt;0|1|2|3|0" />
+        <i3dMapping id="hydraulicOut02_connector" node="0&gt;0|1|2|3|0|0" />
+        <i3dMapping id="electric" node="0&gt;0|1|2|4" />
+        <i3dMapping id="electric_detached" node="0&gt;0|1|2|4|0" />
+        <i3dMapping id="electric_connector" node="0&gt;0|1|2|4|0|0" />
+        <i3dMapping id="wheel06" node="0&gt;0|2|0" />
+        <i3dMapping id="wheel07" node="0&gt;0|2|1" />
+        <i3dMapping id="wheel10" node="0&gt;0|2|2" />
+        <i3dMapping id="wheel11" node="0&gt;0|2|3" />
+        <i3dMapping id="wheel17" node="0&gt;0|2|4" />
+        <i3dMapping id="wheel18" node="0&gt;0|2|5" />
+        <i3dMapping id="yellowRound_02_01" node="0&gt;0|3|0|0" />
+        <i3dMapping id="yellowRound_02_02" node="0&gt;0|3|0|1" />
+        <i3dMapping id="yellowRound_02_03" node="0&gt;0|3|0|2" />
+        <i3dMapping id="yellowRound_02_04" node="0&gt;0|3|0|3" />
+        <i3dMapping id="yellowRound_02_05" node="0&gt;0|3|0|4" />
+        <i3dMapping id="yellowRound_02_06" node="0&gt;0|3|0|5" />
+        <i3dMapping id="plateNumberLight02" node="0&gt;0|3|0|6" />
+        <i3dMapping id="rearLight40_left" node="0&gt;0|3|0|7" />
+        <i3dMapping id="rearLight40_right" node="0&gt;0|3|0|8" />
+        <i3dMapping id="redRectangle_01_left" node="0&gt;0|3|0|9" />
+        <i3dMapping id="redRectangle_01_right" node="0&gt;0|3|0|10" />
+        <i3dMapping id="espro6000RCLights_static" node="0&gt;0|3|1|0" />
+        <i3dMapping id="espro6000RCLightsGlass_static" node="0&gt;0|3|1|1" />
+        <i3dMapping id="licensePlateLightHigh" node="0&gt;0|3|2|0" />
+        <i3dMapping id="workLightBackHigh1" node="0&gt;0|3|3|0" />
+        <i3dMapping id="workLightHopperLeftHigh" node="0&gt;0|3|3|1" />
+        <i3dMapping id="workLightHopperRightHigh" node="0&gt;0|3|3|2" />
+        <i3dMapping id="backLightsHigh1" node="0&gt;0|3|4|0" />
+        <i3dMapping id="turnLightLeftBack" node="0&gt;0|3|5|0" />
+        <i3dMapping id="turnLightRightBack" node="0&gt;0|3|5|1" />
+        <i3dMapping id="reverseLightHigh1" node="0&gt;0|3|6|0" />
+        <i3dMapping id="armLeft" node="0&gt;0|4|0" />
+        <i3dMapping id="armLeftSupport" node="0&gt;0|4|0|0" />
+        <i3dMapping id="armLeftSupportHydraulicRef" node="0&gt;0|4|0|0|0" />
+        <i3dMapping id="supportWheelsLeftPhy" node="0&gt;0|4|0|0|2|0" />
+        <i3dMapping id="supportWheel01" node="0&gt;0|4|0|0|2|0|0" />
+        <i3dMapping id="supportWheel02" node="0&gt;0|4|0|0|2|0|1" />
+        <i3dMapping id="supportWheel03" node="0&gt;0|4|0|0|2|0|2" />
+        <i3dMapping id="supportWheel04" node="0&gt;0|4|0|0|2|0|3" />
+        <i3dMapping id="armLeftSupportHydraulic" node="0&gt;0|4|0|1" />
+        <i3dMapping id="armLeftSupportHydraulicPunch" node="0&gt;0|4|0|1|0" />
+        <i3dMapping id="armLeftRow01" node="0&gt;0|4|0|2" />
+        <i3dMapping id="armLeftRow01DiscsArray" node="0&gt;0|4|0|2|0" />
+        <i3dMapping id="armLeftRow01PartRef" node="0&gt;0|4|0|2|1" />
+        <i3dMapping id="armLeftRow01Effect" node="0&gt;0|4|0|2|2" />
+        <i3dMapping id="armLeftRow02" node="0&gt;0|4|0|3" />
+        <i3dMapping id="armLeftRow01Part" node="0&gt;0|4|0|3|0" />
+        <i3dMapping id="armLeftRow02DiscsArray" node="0&gt;0|4|0|3|1" />
+        <i3dMapping id="armLeftRow02HydraulicRef" node="0&gt;0|4|0|3|2" />
+        <i3dMapping id="armLeftRow02Effect" node="0&gt;0|4|0|3|3" />
+        <i3dMapping id="armLeftRow02Hydraulic" node="0&gt;0|4|0|4" />
+        <i3dMapping id="armLeftRow02HydraulicPunch" node="0&gt;0|4|0|4|0" />
+        <i3dMapping id="armLeftRow03" node="0&gt;0|4|0|5" />
+        <i3dMapping id="armLeftRow03DiscsArray" node="0&gt;0|4|0|5|0" />
+        <i3dMapping id="armLeftRow03HydraulicRef" node="0&gt;0|4|0|5|1" />
+        <i3dMapping id="armLeftRow03Effect" node="0&gt;0|4|0|5|4" />
+        <i3dMapping id="armLeftRow03Hydraulic" node="0&gt;0|4|0|6" />
+        <i3dMapping id="armLeftRow03HydraulicPunch" node="0&gt;0|4|0|6|0" />
+        <i3dMapping id="armLeftPartBack" node="0&gt;0|4|0|7" />
+        <i3dMapping id="armLeftPartBackPart" node="0&gt;0|4|0|7|0" />
+        <i3dMapping id="armLeftPartBackHydraulic02" node="0&gt;0|4|0|7|0|0" />
+        <i3dMapping id="armLeftPartBackHydraulic02Punch" node="0&gt;0|4|0|7|0|0|0" />
+        <i3dMapping id="armLeftBackDiscsArray" node="0&gt;0|4|0|7|0|1" />
+        <i3dMapping id="armLeftPartBackPartEffect" node="0&gt;0|4|0|7|0|5" />
+        <i3dMapping id="armLeftPartBackHydraulic01Ref" node="0&gt;0|4|0|7|1" />
+        <i3dMapping id="armLeftPartBackHydraulic01" node="0&gt;0|4|0|8" />
+        <i3dMapping id="armLeftPartBackHydraulic01Punch" node="0&gt;0|4|0|8|0" />
+        <i3dMapping id="ridgeMarkerLeft" node="0&gt;0|4|0|9|0" />
+        <i3dMapping id="ridgeMarkerLeftPart" node="0&gt;0|4|0|9|0|0|0" />
+        <i3dMapping id="ridgeMarkerLeftDiscRot" node="0&gt;0|4|0|9|0|0|0|0" />
+        <i3dMapping id="ridgeMarkerLeftDisc" node="0&gt;0|4|0|9|0|0|0|0|0" />
+        <i3dMapping id="ridgeMarkerLeftDiscEffect" node="0&gt;0|4|0|9|0|0|0|0|1" />
+        <i3dMapping id="ridgeMarkerLeftHydraulicRef" node="0&gt;0|4|0|9|0|0|0|1" />
+        <i3dMapping id="ridgeMarkerLeftNode" node="0&gt;0|4|0|9|0|0|0|3" />
+        <i3dMapping id="ridgeMarkerLeftHydraulic" node="0&gt;0|4|0|10" />
+        <i3dMapping id="ridgeMarkerLeftHydraulicPunch" node="0&gt;0|4|0|10|0" />
+        <i3dMapping id="armLeftSidePart" node="0&gt;0|4|0|11" />
+        <i3dMapping id="mainHydraulicRef" node="0&gt;0|4|0|12" />
+        <i3dMapping id="armLeftPartBackHydraulic02Ref" node="0&gt;0|4|0|13" />
+        <i3dMapping id="wheel01" node="0&gt;0|4|0|14|0" />
+        <i3dMapping id="wheel01DriveNode" node="0&gt;0|4|0|14|0|0" />
+        <i3dMapping id="wheel02" node="0&gt;0|4|0|14|0|1" />
+        <i3dMapping id="wheel03" node="0&gt;0|4|0|14|0|2" />
+        <i3dMapping id="wheel04" node="0&gt;0|4|0|14|0|3" />
+        <i3dMapping id="wheel05" node="0&gt;0|4|0|14|0|4" />
+        <i3dMapping id="armRight" node="0&gt;0|4|1" />
+        <i3dMapping id="mainHydraulicRefFrame" node="0&gt;0|4|1|0" />
+        <i3dMapping id="mainHydraulic" node="0&gt;0|4|1|0|0" />
+        <i3dMapping id="mainHydraulicPunch" node="0&gt;0|4|1|0|0|0" />
+        <i3dMapping id="armRightSupport" node="0&gt;0|4|1|1" />
+        <i3dMapping id="armRightSupportHydraulicRef" node="0&gt;0|4|1|1|0" />
+        <i3dMapping id="supportWheelsRightPhy" node="0&gt;0|4|1|1|1|0" />
+        <i3dMapping id="supportWheel09" node="0&gt;0|4|1|1|1|0|0" />
+        <i3dMapping id="supportWheel10" node="0&gt;0|4|1|1|1|0|1" />
+        <i3dMapping id="supportWheel11" node="0&gt;0|4|1|1|1|0|2" />
+        <i3dMapping id="supportWheel12" node="0&gt;0|4|1|1|1|0|3" />
+        <i3dMapping id="armRightSupportHydraulic" node="0&gt;0|4|1|2" />
+        <i3dMapping id="armRightSupportHydraulicPunch" node="0&gt;0|4|1|2|0" />
+        <i3dMapping id="armRightRow01" node="0&gt;0|4|1|3" />
+        <i3dMapping id="armRightRow01DiscsArray" node="0&gt;0|4|1|3|0" />
+        <i3dMapping id="armRightRow01PartRef" node="0&gt;0|4|1|3|1" />
+        <i3dMapping id="armRightRow01Effect" node="0&gt;0|4|1|3|2" />
+        <i3dMapping id="armRightRow02" node="0&gt;0|4|1|4" />
+        <i3dMapping id="armRightRow01Part" node="0&gt;0|4|1|4|0" />
+        <i3dMapping id="armRightRow02DiscsArray" node="0&gt;0|4|1|4|1" />
+        <i3dMapping id="armRightRow02HydraulicRef" node="0&gt;0|4|1|4|2" />
+        <i3dMapping id="armRightRow02Effect" node="0&gt;0|4|1|4|3" />
+        <i3dMapping id="armRightRow02Hydraulic" node="0&gt;0|4|1|5" />
+        <i3dMapping id="armRightRow02HydraulicPunch" node="0&gt;0|4|1|5|0" />
+        <i3dMapping id="armRightRow03" node="0&gt;0|4|1|6" />
+        <i3dMapping id="armRightRow03DiscsArray" node="0&gt;0|4|1|6|0" />
+        <i3dMapping id="armRightRow03HydraulicRef" node="0&gt;0|4|1|6|1" />
+        <i3dMapping id="armRightRow03Effect" node="0&gt;0|4|1|6|3" />
+        <i3dMapping id="armRightRow03Hydraulic" node="0&gt;0|4|1|7" />
+        <i3dMapping id="armRightRow03HydraulicPunch" node="0&gt;0|4|1|7|0" />
+        <i3dMapping id="armRightPartBack" node="0&gt;0|4|1|8" />
+        <i3dMapping id="armRightPartBackPart" node="0&gt;0|4|1|8|0" />
+        <i3dMapping id="armRightPartBackHydraulic02" node="0&gt;0|4|1|8|0|0" />
+        <i3dMapping id="armRightPartBackHydraulic02Punch" node="0&gt;0|4|1|8|0|0|0" />
+        <i3dMapping id="armRightBackDiscsArray" node="0&gt;0|4|1|8|0|1" />
+        <i3dMapping id="armRightPartBackPartEffect" node="0&gt;0|4|1|8|0|5" />
+        <i3dMapping id="armRightPartBackHydraulic01Ref" node="0&gt;0|4|1|8|1" />
+        <i3dMapping id="armRightPartBackHydraulic01" node="0&gt;0|4|1|9" />
+        <i3dMapping id="armRightPartBackHydraulic01Punch" node="0&gt;0|4|1|9|0" />
+        <i3dMapping id="ridgeMarkerRight" node="0&gt;0|4|1|10|0" />
+        <i3dMapping id="ridgeMarkerRightPart" node="0&gt;0|4|1|10|0|0|0" />
+        <i3dMapping id="ridgeMarkerRightDisc" node="0&gt;0|4|1|10|0|0|0|0|0" />
+        <i3dMapping id="ridgeMarkerRightDiscEffect" node="0&gt;0|4|1|10|0|0|0|0|1" />
+        <i3dMapping id="ridgeMarkerRightHydraulicRef" node="0&gt;0|4|1|10|0|0|0|1" />
+        <i3dMapping id="ridgeMarkerRightNode" node="0&gt;0|4|1|10|0|0|0|3" />
+        <i3dMapping id="ridgeMarkerRightHydraulic" node="0&gt;0|4|1|11" />
+        <i3dMapping id="ridgeMarkerRightHydraulicPunch" node="0&gt;0|4|1|11|0" />
+        <i3dMapping id="armRightSidePart" node="0&gt;0|4|1|12" />
+        <i3dMapping id="armRightPartBackHydraulic02Ref" node="0&gt;0|4|1|13" />
+        <i3dMapping id="wheel16" node="0&gt;0|4|1|14|0" />
+        <i3dMapping id="wheel16DriveNode" node="0&gt;0|4|1|14|0|0" />
+        <i3dMapping id="wheel12" node="0&gt;0|4|1|14|0|1" />
+        <i3dMapping id="wheel13" node="0&gt;0|4|1|14|0|2" />
+        <i3dMapping id="wheel14" node="0&gt;0|4|1|14|0|3" />
+        <i3dMapping id="wheel15" node="0&gt;0|4|1|14|0|4" />
+        <i3dMapping id="armCenterSupport" node="0&gt;0|4|2|0" />
+        <i3dMapping id="armCenterSupportHydraulicRef" node="0&gt;0|4|2|0|0" />
+        <i3dMapping id="supportWheelsCenterPhy" node="0&gt;0|4|2|0|1|0" />
+        <i3dMapping id="supportWheel05" node="0&gt;0|4|2|0|1|0|0" />
+        <i3dMapping id="supportWheel06" node="0&gt;0|4|2|0|1|0|1" />
+        <i3dMapping id="supportWheel07" node="0&gt;0|4|2|0|1|0|2" />
+        <i3dMapping id="supportWheel08" node="0&gt;0|4|2|0|1|0|3" />
+        <i3dMapping id="armCenterSupportHydraulic" node="0&gt;0|4|2|1" />
+        <i3dMapping id="armCenterSupportHydraulicPunch" node="0&gt;0|4|2|1|0" />
+        <i3dMapping id="armCenterRow01" node="0&gt;0|4|2|2" />
+        <i3dMapping id="armCenterRow01DiscsArray" node="0&gt;0|4|2|2|0" />
+        <i3dMapping id="armCenterRow01PartRef" node="0&gt;0|4|2|2|2" />
+        <i3dMapping id="armCenterRow01Effect" node="0&gt;0|4|2|2|3" />
+        <i3dMapping id="armCenterRow02" node="0&gt;0|4|2|3" />
+        <i3dMapping id="armCenterRow02DiscsArray" node="0&gt;0|4|2|3|0" />
+        <i3dMapping id="armCenterRow02HydraulicRef" node="0&gt;0|4|2|3|1" />
+        <i3dMapping id="armCenterRow01Part" node="0&gt;0|4|2|3|3" />
+        <i3dMapping id="armCenterRow02Effect" node="0&gt;0|4|2|3|4" />
+        <i3dMapping id="armCenterRow02Hydraulic" node="0&gt;0|4|2|4" />
+        <i3dMapping id="armCenterRow02HydraulicPunch" node="0&gt;0|4|2|4|0" />
+        <i3dMapping id="armCenterRow03" node="0&gt;0|4|2|5" />
+        <i3dMapping id="armCenterRow03DiscsArray" node="0&gt;0|4|2|5|0" />
+        <i3dMapping id="armCenterRow03HydraulicRef" node="0&gt;0|4|2|5|1" />
+        <i3dMapping id="armCenterRow03Effect" node="0&gt;0|4|2|5|4" />
+        <i3dMapping id="armCenterRow03Hydraulic" node="0&gt;0|4|2|6" />
+        <i3dMapping id="armCenterRow03HydraulicPunch" node="0&gt;0|4|2|6|0" />
+        <i3dMapping id="armCenterRow04" node="0&gt;0|4|2|7" />
+        <i3dMapping id="armCenterRow04HydraulicRef" node="0&gt;0|4|2|7|0" />
+        <i3dMapping id="wheel08" node="0&gt;0|4|2|7|1" />
+        <i3dMapping id="wheel09" node="0&gt;0|4|2|7|2" />
+        <i3dMapping id="armCenterRow04Hydraulic" node="0&gt;0|4|2|8" />
+        <i3dMapping id="armCenterRow04HydraulicPunch" node="0&gt;0|4|2|8|0" />
+        <i3dMapping id="armCenterPartBack" node="0&gt;0|4|2|9" />
+        <i3dMapping id="armCenterPartBackPart" node="0&gt;0|4|2|9|0" />
+        <i3dMapping id="armCenterPartBackHydraulic02" node="0&gt;0|4|2|9|0|0" />
+        <i3dMapping id="armCenterPartBackHydraulic02Punch" node="0&gt;0|4|2|9|0|0|0" />
+        <i3dMapping id="armCenterBackDiscsArray" node="0&gt;0|4|2|9|0|1" />
+        <i3dMapping id="armCenterPartBackPartEffect" node="0&gt;0|4|2|9|0|6" />
+        <i3dMapping id="armCenterPartBackHydraulic01Ref" node="0&gt;0|4|2|9|1" />
+        <i3dMapping id="armCenterPartBackHydraulic01" node="0&gt;0|4|2|10" />
+        <i3dMapping id="armCenterPartBackHydraulic01Punch" node="0&gt;0|4|2|10|0" />
+        <i3dMapping id="groundReferenceNode" node="0&gt;0|4|2|11" />
+        <i3dMapping id="depthNode" node="0&gt;0|4|2|12" />
+        <i3dMapping id="drawbarYRot" node="0&gt;0|4|3" />
+        <i3dMapping id="drawbarXRotRot" node="0&gt;0|4|3|0" />
+        <i3dMapping id="drawbarXRot" node="0&gt;0|4|3|0|0" />
+        <i3dMapping id="cover_open" node="0&gt;0|4|4|0" />
+        <i3dMapping id="cover_closed" node="0&gt;0|4|4|1" />
+        <i3dMapping id="podium" node="0&gt;0|4|5" />
+        <i3dMapping id="ladder" node="0&gt;0|4|6|0" />
+        <i3dMapping id="ladderSpringRef" node="0&gt;0|4|6|0|0" />
+        <i3dMapping id="ladderSpring" node="0&gt;0|4|7" />
+        <i3dMapping id="armLeftCatch" node="0&gt;0|4|8" />
+        <i3dMapping id="armLeftCatchSpring" node="0&gt;0|4|8|0" />
+        <i3dMapping id="armRightCatchHydraulicRef" node="0&gt;0|4|8|1" />
+        <i3dMapping id="armRightCatch" node="0&gt;0|4|9" />
+        <i3dMapping id="armRightCatchHydraulic" node="0&gt;0|4|9|0" />
+        <i3dMapping id="armRightCatchHydraulicPunch" node="0&gt;0|4|9|0|0" />
+        <i3dMapping id="armRightCatchSpring" node="0&gt;0|4|9|1" />
+        <i3dMapping id="armLeftCatchSpringRef" node="0&gt;0|4|10" />
+        <i3dMapping id="armRightCatchSpringRef" node="0&gt;0|4|11" />
+        <i3dMapping id="armCenterPartBackHydraulic02Ref" node="0&gt;0|4|12" />
+        <i3dMapping id="exactFillRootNodeSeeds" node="0&gt;0|5|0" />
+        <i3dMapping id="exactFillRootNodeFertilizer" node="0&gt;0|5|1" />
+        <i3dMapping id="fillVolumeSeeds" node="0&gt;0|5|2" />
+        <i3dMapping id="fillVolumeFertilizer" node="0&gt;0|5|3" />
+        <i3dMapping id="loadNodeSeeds" node="0&gt;0|5|4" />
+        <i3dMapping id="loadNodeFertilizer" node="0&gt;0|5|5" />
+        <i3dMapping id="unloadNodeSeeds" node="0&gt;0|5|6" />
+        <i3dMapping id="unloadNodeFertilizer" node="0&gt;0|5|7" />
+        <i3dMapping id="workAreaStart" node="0&gt;0|6|0" />
+        <i3dMapping id="workAreaWidth" node="0&gt;0|6|1" />
+        <i3dMapping id="workAreaHeight" node="0&gt;0|6|2" />
+        <i3dMapping id="smokeEmitter" node="0&gt;0|7|0" />
+        <i3dMapping id="aiMarkerLeft" node="0&gt;0|8|0" />
+        <i3dMapping id="aiMarkerRight" node="0&gt;0|8|1" />
+        <i3dMapping id="aiMarkerBack" node="0&gt;0|8|2" />
+        <i3dMapping id="aiCollisionNode" node="0&gt;0|8|3" />
+        <i3dMapping id="licensePlate" node="0&gt;0|10" />
+        <i3dMapping id="espro6000RC_drawbar_component2" node="1&gt;" />
+        <i3dMapping id="attacherJoint" node="1&gt;0" />
+        <i3dMapping id="drawbarYRotRef" node="1&gt;1" />
+        <i3dMapping id="drawbarXRotRef" node="1&gt;2" />
+    </i3dMappings>
+</vehicle>
